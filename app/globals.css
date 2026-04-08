@@ -1,12 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@font-face {
-  font-family: 'NotoNaskh';
-  src: url('/fonts/NotoNaskhArabic-Regular.woff2') format('woff2');
-}
-
 html {
-  font-family: 'NotoNaskh', 'Tahoma', sans-serif;
-  direction: rtl;
+  font-family: "Loew Next Arabic", "Tahoma", system-ui, -apple-system, "Segoe UI",
+    Arial, sans-serif;
 }
