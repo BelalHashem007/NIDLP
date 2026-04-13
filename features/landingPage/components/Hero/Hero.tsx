@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="h-screen w-full">
+    <div id="about-council" className="relative min-h-full w-full ">
       <Image
         src="/assets/bg.jpg"
         alt="background"
@@ -17,10 +17,10 @@ function Hero() {
       <div className="relative z-10 text-[#E5E7EB]">
         <Header />
 
-        <div className="w-[40%] m-auto text-center">
-          <h1 className="text-[50px] text-white mb-10 mt-20">
+        <div className="w-[80%] md:w-[40%] m-auto text-center">
+          <h1 className="text-[30px] md:text-[50px] text-white mb-10 mt-30">
             مجلس الشراكة{" "}
-            <span className="text-[50px] text-blue-400">اللوجستي</span> مع
+            <span className="text-[30px] md:text-[50px] text-blue-400">اللوجستي</span> مع
             <br /> القطاع الخاص
           </h1>
           <p>
@@ -30,11 +30,11 @@ function Hero() {
             تواجهه وتزويد اللجنة بالمرئيات والمقترحات التي تسهم في رفع كفاءة
             القطاع اللوجستي
           </p>
-          <button className="px-7 py-3 rounded-lg text-white font-semibold mt-10 mb-30 bg-gradient-to-r from-[#66B4A5] to-[#5291A9]">
+          <button className="px-7 py-3 rounded-lg text-white font-semibold mt-10 mb-30 bg-gradient-to-r from-[#66B4A5] to-[#5291A9] ">
             رفع تحدي او مقترح جديد
           </button>
           <a
-            href="#council vision"
+            href="#council-vision"
             className="block text-center cursor-pointer w-full "
           >
             <Image
@@ -44,7 +44,7 @@ function Hero() {
               height={50}
               className="mx-auto animate-bounce"
             />
-            <p className="-mt-4">التمرير للأسفل</p>
+            <p className="-mt-6 pb-5">التمرير للأسفل</p>
           </a>
         </div>
       </div>
