@@ -21,7 +21,7 @@ function CouncilGoals() {
       
       {/* Container الأساسي */}
       {/* في الموبايل: flex-col لترتيبهم تحت بعض. في الديسكتوب: h-[600px] لتوزيعهم دائرياً */}
-      <div className="relative m-auto max-w-4xl h-auto md:h-[600px] flex flex-col md:block items-center gap-12 md:gap-0 px-6">
+      <div className="relative m-auto max-w-4xl h-auto md:h-150 flex flex-col md:block items-center gap-12 md:gap-0 px-6">
         
         {/* اللوجو المركزي يظهر فقط في الديسكتوب */}
         <div className="hidden md:flex absolute inset-0 m-auto h-40 items-center justify-center text-white text-center z-20">    
