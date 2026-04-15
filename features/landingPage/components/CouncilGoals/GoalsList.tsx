@@ -20,7 +20,7 @@ function GoalsList() {
             </MotionWrapper>
             
             
-            <p className="text-white text-sm md:text-sm leading-relaxed font-medium px-2 max-w-[280px] md:max-w-none">
+            <p className="text-white text-sm md:text-sm leading-relaxed font-medium px-2 max-w-70 md:max-w-none">
               {item.text}
             </p>
           </div>

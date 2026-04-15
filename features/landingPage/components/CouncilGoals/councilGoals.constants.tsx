@@ -1,4 +1,3 @@
-import { dir } from 'console';
 import { Lightbulb, Handshake, Target, Settings, Users } from 'lucide-react'
 import React from 'react';
 
