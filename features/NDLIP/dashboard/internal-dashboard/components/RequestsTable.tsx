@@ -15,7 +15,7 @@ import {
   PaginationPrevious,
   PaginationNext,
 } from "@/components/ui/pagination";
-import { requestsData } from "../../data/internal-dashboard-data";
+import { requestsData } from "../../../data/internal-dashboard-data";
 import Image from "next/image";
 import { useState } from "react";
 
