@@ -44,9 +44,18 @@ export const navConfig: NavEntry[] = [
     label: "لوحة التحكم",
     icon: ChartPie,
     children: [
-      { href: "/nidlp/internal-dashboard", label: "لوحة التحكم الداخلية" },
-      { href: "/nidlp/external-dashboard", label: "لوحة التحكم الخارجية" },
-      { href: "/nidlp/surveys-dashboard", label: "لوحة تحكم الاستبيان" },
+      {
+        href: "/nidlp/dashboard/internal-dashboard",
+        label: "لوحة التحكم الداخلية",
+      },
+      {
+        href: "/nidlp/dashboard/external-dashboard",
+        label: "لوحة التحكم الخارجية",
+      },
+      {
+        href: "/nidlp/dashboard/surveys-dashboard",
+        label: "لوحة تحكم الاستبيان",
+      },
     ],
   },
   {

@@ -19,11 +19,28 @@ import { requestsData } from "../../data/internal-dashboard-data";
 import Image from "next/image";
 import { useState } from "react";
 
-export function RequestsTable() {
+export function RequestsTable({
+  tap,
+  selectedEmployee,
+  selectedAgency,
+}: {
+  tap: string;
+  selectedEmployee: string;
+  selectedAgency: string;
+}) {
   const [page, setPage] = useState(1);
 
-  const currentPageData = requestsData.slice((page - 1) * 9, page * 9);
-  const totalPages = Math.ceil(requestsData.length / 9);
+  const filteredData = requestsData.filter((r) => {
+    if (tap === "employees" && selectedEmployee !== "جميع الموظفين") {
+      return r.assigned_employee.name === selectedEmployee;
+    }
+    if (tap === "agencies" && selectedAgency !== "جميع الجهات الحكومية") {
+      return r.source.name === selectedAgency;
+    }
+    return true;
+  });
+  const currentPageData = filteredData.slice((page - 1) * 9, page * 9);
+  const totalPages = Math.ceil(filteredData.length / 9);
   return (
     <ReusableCardComponent>
       <div className="p-8">
