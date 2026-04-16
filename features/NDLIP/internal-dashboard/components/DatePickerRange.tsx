@@ -64,7 +64,7 @@ export default function DateRangePicker() {
   const [to, setTo] = React.useState<Date | undefined>();
 
   return (
-    <div className="flex gap-8">
+    <div className="flex gap-8 flex-1">
       <SingleDatePicker
         label="من تاريخ"
         value={from}

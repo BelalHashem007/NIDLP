@@ -3,13 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import {
-  Bell,
-  Building2,
-  ChevronLeft,
-  Menu,
-  X,
-} from "lucide-react";
+import { Bell, Building2, ChevronLeft, Menu, X } from "lucide-react";
 import Logo from "@/public/logo.png";
 import Avatar from "@/public/avatar@2x.png";
 import { BreadCrumbComponent } from "@/components/BreadCrumpComponent";
@@ -51,7 +45,7 @@ export function NidlpHeader() {
         {/* Desktop */}
         <div className="hidden h-20 w-full items-center px-4 lg:flex">
           <div className="flex h-full w-full items-center">
-            <div className="flex h-full min-w-0 w-61.25 items-center justify-center gap-2 border-l border-[#FFFFFF1F]">
+            <div className="flex h-full min-w-0 w-59.5 items-center justify-center gap-2 border-l border-[#FFFFFF1F]">
               <Image src={Logo} alt="Logo" priority />
             </div>
 
