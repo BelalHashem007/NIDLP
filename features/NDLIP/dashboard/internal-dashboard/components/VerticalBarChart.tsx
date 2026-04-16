@@ -82,12 +82,17 @@ export function VerticalBarChart({
     scales: {
       x: {
         border: { display: false },
-        ticks: { display: imageUrls ? false : true },
+        ticks: {
+          display: imageUrls ? false : true,
+          font: {
+            size: 16,
+          },
+        },
       },
       y: {
         border: { display: false },
         grid: {
-          color: "#CDCDCD",
+          color: "#f5f2f2",
         },
       },
     },
@@ -123,7 +128,7 @@ export function VerticalBarChart({
               }}
             />
             <div
-              className="absolute text-xs text-gray-500 text-center text-wrap max-w-20 h-[32px]"
+              className="absolute text-xs  text-gray-500 text-center text-wrap max-w-20 h-8"
               style={{
                 bottom: -10,
                 left: x,

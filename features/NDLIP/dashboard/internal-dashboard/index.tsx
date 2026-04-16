@@ -1,7 +1,7 @@
 "use client";
 import ReusableCardComponent from "@/components/nidlp/ReusableCardComponent";
 import DateRangePicker from "./components/DatePickerRange";
-import { FileText, User, Building2, ArrowUp } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 import MiniSparkline from "./components/MiniSparkline";
 import { DoughnutChart } from "./components/DoughnutChart";
 import { VerticalBarChart } from "./components/VerticalBarChart";
@@ -18,12 +18,13 @@ import {
   agenciesData,
   employeesData,
   requestsData,
-} from "../data/internal-dashboard-data";
+} from "../../data/internal-dashboard-data";
 import Image from "next/image";
 import { SemiCircleChart } from "./components/SemiCircleChart";
 import { useMemo, useState } from "react";
 import { EmployeeInfoComponent } from "./components/EmployeeInfoComponent";
 import { AgencyInfoComponent } from "./components/AgencyInfoComponent";
+import { StatsOverView } from "./components/StatsOverView";
 
 export default function InternalDashboardIndex({
   tap,
@@ -45,12 +46,12 @@ export default function InternalDashboardIndex({
       map.set(r.assigned_employee.name, r.assigned_employee.photo),
     );
     return Array.from(map, ([name, photo]) => ({ name, photo }));
-  }, [requestsData]);
+  }, []);
   const uniqueAgenciesData = useMemo(() => {
     const map = new Map();
     requestsData.forEach((r) => map.set(r.source.name, r.source.photo));
     return Array.from(map, ([name, photo]) => ({ name, photo }));
-  }, [requestsData]);
+  }, []);
 
   return (
     <div className="mt-6 flex flex-col gap-8">
@@ -227,115 +228,7 @@ export default function InternalDashboardIndex({
                   type="agencies"
                 />
               ) : (
-                <div className="flex-1 max-w-4xl grid grid-cols-[60px_1fr_60px] lg:grid-cols-[120px_1fr_120px] items-center gap-y-10 gap-x-6">
-                  {/* Row 1 */}
-                  <div className="text-left">
-                    <span className="font-bold text-base lg:text-xl/[28px] block">
-                      180
-                    </span>
-                    <div className="text-[#6B7280] text-sm text-wrap lg:text-nowrap">
-                      طلب تحدي
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col gap-3">
-                    <div className="flex gap-1 items-center justify-center text-[#6B7280] text-sm">
-                      <FileText className="w-4 h-3.5" />
-                      حسب حالة نوع الطلب
-                    </div>
-                    <div className="rounded-sm h-4 w-full flex overflow-hidden bg-gray-100">
-                      <div
-                        style={{ width: `${(180 / 280) * 100}%` }}
-                        className="h-full bg-[#119DA9]"
-                      ></div>
-                      <div
-                        style={{ width: `${(100 / 280) * 100}%` }}
-                        className="h-full bg-[#632F84]"
-                      ></div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <span className="font-bold text-base lg:text-xl/[28px] block">
-                      100
-                    </span>
-                    <div className="text-[#6B7280] text-sm text-wrap lg:text-nowrap">
-                      طلب اقتراح
-                    </div>
-                  </div>
-
-                  {/* Row 2 */}
-                  <div className="text-left">
-                    <span className="font-bold text-base lg:text-xl/[28px] block">
-                      240
-                    </span>
-                    <div className="text-[#6B7280] text-sm text-wrap lg:text-nowrap">
-                      الطلبات المسندة
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col gap-3">
-                    <div className="flex gap-1 items-center justify-center text-[#6B7280] text-sm">
-                      <User className="w-4 h-3.5" />
-                      حسب حالة الاسناد لموظف
-                    </div>
-                    <div className="rounded-sm h-4 w-full flex overflow-hidden bg-gray-100">
-                      <div
-                        style={{ width: `${(240 / 280) * 100}%` }}
-                        className="h-full bg-[#119DA9]"
-                      ></div>
-                      <div
-                        style={{ width: `${(40 / 280) * 100}%` }}
-                        className="h-full bg-[#F3F4F6]"
-                      ></div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <span className="font-bold text-base lg:text-xl/[28px] block">
-                      40
-                    </span>
-                    <div className="text-[#6B7280] text-sm text-wrap lg:text-nowrap">
-                      الطلبات الغير مسندة
-                    </div>
-                  </div>
-
-                  {/* Row 3 */}
-                  <div className="text-left">
-                    <span className="font-bold text-base lg:text-xl/[28px] block">
-                      160
-                    </span>
-                    <div className="text-[#6B7280] text-sm text-wrap lg:text-nowrap">
-                      الطلبات المسندة
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col gap-3">
-                    <div className="flex gap-1 items-center justify-center text-[#6B7280] text-sm">
-                      <Building2 className="w-4 h-3.5" />
-                      حسب حالة الإسناد لجهة حكومية{" "}
-                    </div>
-                    <div className="rounded-sm h-4 w-full flex overflow-hidden bg-gray-100">
-                      <div
-                        style={{ width: `${(160 / 280) * 100}%` }}
-                        className="h-full bg-[#119DA9]"
-                      ></div>
-                      <div
-                        style={{ width: `${(120 / 280) * 100}%` }}
-                        className="h-full bg-[#F3F4F6]"
-                      ></div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <span className="font-bold text-base lg:text-xl/[28px] block">
-                      120
-                    </span>
-                    <div className="text-[#6B7280] text-sm text-wrap lg:text-nowrap">
-                      الطلبات الغير مسندة
-                    </div>
-                  </div>
-                </div>
+                <StatsOverView type="internal" />
               )}
             </div>
           </ReusableCardComponent>
@@ -382,7 +275,7 @@ export default function InternalDashboardIndex({
                 (tap === "employees" && selectedEmployee !== "جميع الموظفين") ||
                 (isAgencies && selectedAgency !== "جميع الجهات الحكومية")
               ) && (
-                <div className="w-[150px] h-[60px] absolute left-0 2xl:bottom-0  bottom-5">
+                <div className="w-37.5 h-15 absolute left-0 2xl:bottom-0  bottom-5">
                   <MiniSparkline />
                 </div>
               )}
@@ -562,13 +455,13 @@ export default function InternalDashboardIndex({
                 <div className="flex-1 w-full">
                   <VerticalBarChart
                     labels={[
-                      ["اخري"],
-                      ["سلامة", "المنتجات"],
-                      ["التدريب", "والتأهيل"],
-                      ["المنصات", "التقنية"],
-                      ["حجز الشاحنات", "ومناطق الايواء", "والتخزين"],
-                      ["القوانين", "والتشريعات"],
                       ["السائقين"],
+                      ["القوانين", "والتشريعات"],
+                      ["حجز الشاحنات", "ومناطق الايواء", "والتخزين"],
+                      ["المنصات", "التقنية"],
+                      ["التدريب", "والتأهيل"],
+                      ["سلامة", "المنتجات"],
+                      ["اخري"],
                     ]}
                     dataValues={[120, 70, 40, 100, 15, 15, 70]}
                     tooltipLabel="عدد الطلبات حسب المحاور"
@@ -584,12 +477,12 @@ export default function InternalDashboardIndex({
                 <div className="flex-1 w-full">
                   <VerticalBarChart
                     labels={[
-                      ["اخري"],
-                      ["الاهداف", "والمستهدفات", "حياة الانسان"],
-                      ["حياة الانسان"],
-                      ["جودة الخدمة"],
-                      ["الوقت"],
                       ["مادي"],
+                      ["الوقت"],
+                      ["جودة الخدمة"],
+                      ["حياة الانسان"],
+                      ["الاهداف", "والمستهدفات", "حياة الانسان"],
+                      ["اخري"],
                     ]}
                     dataValues={[120, 70, 40, 100, 15, 15]}
                     tooltipLabel="عدد الطلبات حسب التأثير"
