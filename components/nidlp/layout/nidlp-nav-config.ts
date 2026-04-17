@@ -60,12 +60,12 @@ export const navConfig: NavEntry[] = [
   },
   {
     kind: "group",
-    id: "orders",
+    id: "requestWorkflow",
     label: "إدارة الطلبات",
     icon: FileText,
     children: [
-      { href: "/nidlp/orders/all", label: "جميع الطلبات", badge: "26" },
-      { href: "/nidlp/orders/my", label: "طلباتي", badge: "26" },
+      { href: "/nidlp/requestWorkflow/allOrders", label: "جميع الطلبات", badge: "26" },
+      { href: "/nidlp/requestWorkflow/myOrders", label: "طلباتي", badge: "26" },
     ],
   },
   {

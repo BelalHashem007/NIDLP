@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Menu, X, LogIn, Globe } from 'lucide-react'
+import Link from 'next/link'
 
 import { HEADER_LINKS } from './header.constants'
 import NavLinks from './components/NavLinks'
@@ -29,10 +30,13 @@ export default function Header() {
             <span>En</span>
           </button>
 
-          <button className="hidden md:flex items-center gap-2 border-2 border-gray-200 rounded-lg px-5 py-2 hover:border-blue-400 hover:text-blue-400 transition duration-300 text-sm">
-            <LogIn size={16} />
-            تسجيل الدخول
-          </button>
+          <Link href={"/nidlp/dashboard/internal-dashboard"} >
+            <button className="hidden md:flex items-center gap-2 border-2 border-gray-200 rounded-lg px-5 py-2 hover:border-blue-400 cursor-pointer hover:text-blue-400 transition duration-300 text-sm">
+              <LogIn size={16} />
+              تسجيل الدخول
+            </button>
+          </Link>
+          
 
           <button
             className="md:hidden p-1 hover:text-blue-400 transition duration-300"
