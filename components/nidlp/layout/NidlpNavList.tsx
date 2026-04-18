@@ -7,6 +7,7 @@ import { useMemo, useState } from "react";
 import { ChevronLeft } from "lucide-react";
 import {
   groupHasActiveChild,
+  isNavChildActive,
   navConfig,
   type NavGroupEntry,
 } from "@/components/nidlp/layout/nidlp-nav-config";
@@ -117,7 +118,7 @@ export function NidlpNavList({ variant, onNavigate }: NidlpNavListProps) {
               {expanded ? (
                 <div className="mt-1 space-y-1 border-s-2 border-slate-200 ps-2 ms-2">
                   {entry.children.map((child) => {
-                    const childActive = pathname === child.href;
+                    const childActive = isNavChildActive(child, pathname);
                     return (
                       <Link
                         key={child.href}
@@ -239,7 +240,7 @@ function DrawerNavGroup({
       {expanded ? (
         <div className="border-t border-white/5 bg-black/15 py-1">
           {entry.children.map((child) => {
-            const childActive = pathname === child.href;
+            const childActive = isNavChildActive(child, pathname);
             return (
               <Link
                 key={child.href}

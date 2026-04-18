@@ -1,16 +1,8 @@
 "use client";
-import { Chart } from "chart.js";
+import { Chart, ArcElement } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 
-const data = {
-  datasets: [
-    {
-      data: [20, 120],
-      backgroundColor: ["#f0f2f5", "#14a0a6"],
-      borderWidth: 0,
-    },
-  ],
-};
+Chart.register(ArcElement);
 
 const options = {
   rotation: -90,
@@ -76,11 +68,13 @@ const createTopLabelsPlugin = ({
   activeValue,
   inactiveLabel,
   inactiveValue,
+  topLabelsPositions,
 }: {
   activeLabel: string;
   activeValue: number;
   inactiveLabel: string;
   inactiveValue: number;
+  topLabelsPositions?: number[];
 }) => ({
   id: "topLabels",
   afterDraw(chart: Chart) {
@@ -89,22 +83,64 @@ const createTopLabelsPlugin = ({
 
     ctx.save();
     ctx.font = "bold 14px sans-serif";
+    const lineHeight = 18;
+
+    // Helper function to handle wrapping
+    const wrapText = (text: string, x: number, y: number, maxWidth: number) => {
+      const words = text.split(" ");
+      let line = "";
+      let currentY = y;
+
+      for (let n = 0; n < words.length; n++) {
+        const testLine = line + words[n] + " ";
+        const metrics = ctx.measureText(testLine);
+        const testWidth = metrics.width;
+
+        if (testWidth > maxWidth && n > 0) {
+          ctx.fillText(line, x, currentY);
+          line = words[n] + " ";
+          currentY += lineHeight;
+        } else {
+          line = testLine;
+        }
+      }
+      ctx.fillText(line, x, currentY);
+      return currentY; // Return last Y position for the value/number below
+    };
 
     // Right (active)
     ctx.textAlign = "right";
     ctx.fillStyle = "#6B7280";
-    ctx.fillText(activeLabel, chartArea.right, chartArea.top + 90);
+    const activeLabelY = wrapText(
+      activeLabel,
+      chartArea.right,
+      chartArea.top + (topLabelsPositions ? topLabelsPositions[0] : 90),
+      100,
+    );
 
     ctx.fillStyle = "#111827";
-    ctx.fillText(String(activeValue), chartArea.right, chartArea.top + 110);
+    ctx.fillText(
+      String(activeValue),
+      chartArea.right,
+      activeLabelY + lineHeight,
+    );
 
     // Left (inactive)
     ctx.textAlign = "left";
     ctx.fillStyle = "#6B7280";
-    ctx.fillText(inactiveLabel, chartArea.left, chartArea.top + 120);
+    const inactiveLabelY = wrapText(
+      inactiveLabel,
+      chartArea.left,
+      chartArea.top + (topLabelsPositions ? topLabelsPositions[1] : 90),
+      100,
+    );
 
     ctx.fillStyle = "#1D212F";
-    ctx.fillText(String(inactiveValue), chartArea.left, chartArea.top + 140);
+    ctx.fillText(
+      String(inactiveValue),
+      chartArea.left,
+      inactiveLabelY + lineHeight,
+    );
 
     ctx.restore();
   },
@@ -115,11 +151,17 @@ export function SemiCircleChart({
   activeValue,
   inactiveValue,
   type,
+  colors,
+  toplabels,
+  topLabelsPositions,
 }: {
   title: string;
   activeValue: number;
   inactiveValue: number;
-  type: "employees" | "agencies";
+  type: "employees" | "agencies" | "suverysDashboard";
+  colors?: string[];
+  toplabels?: string[];
+  topLabelsPositions?: number[];
 }) {
   const total = activeValue + inactiveValue;
 
@@ -130,7 +172,9 @@ export function SemiCircleChart({
     datasets: [
       {
         data: [inactiveValue, activeValue],
-        backgroundColor: ["#f0f2f5", "#14a0a6"],
+        backgroundColor: colors
+          ? [colors[0], colors[1]]
+          : ["#f0f2f5", "#14a0a6"],
         borderWidth: 0,
       },
     ],
@@ -143,14 +187,17 @@ export function SemiCircleChart({
   });
 
   const topLabelsPlugin = createTopLabelsPlugin({
-    activeLabel: "نشط",
+    activeLabel:
+      type === "suverysDashboard" && toplabels ? toplabels[0] : "نشط",
     activeValue,
-    inactiveLabel: "معطل",
+    inactiveLabel:
+      type === "suverysDashboard" && toplabels ? toplabels[1] : "معطل",
     inactiveValue,
+    topLabelsPositions,
   });
 
   return (
-    <div className="">
+    <div>
       <Doughnut
         key={type}
         data={data}

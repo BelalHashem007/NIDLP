@@ -25,6 +25,7 @@ import { useMemo, useState } from "react";
 import { EmployeeInfoComponent } from "./components/EmployeeInfoComponent";
 import { AgencyInfoComponent } from "./components/AgencyInfoComponent";
 import { StatsOverView } from "./components/StatsOverView";
+import { Filter } from "../components/Filter";
 
 export default function InternalDashboardIndex({
   tap,
@@ -62,119 +63,18 @@ export default function InternalDashboardIndex({
             <span className="text-[#6B7280] text-sm whitespace-nowrap">
               {isEmployees ? "الموظف المسند" : "الجهة الحكومية "}
             </span>
-
-            <Select
+            <Filter
               value={isEmployees ? selectedEmployee : selectedAgency}
-              onValueChange={
-                isEmployees ? setSelectedEmployee : setSelectedAgency
+              setValue={isEmployees ? setSelectedEmployee : setSelectedAgency}
+              data={isEmployees ? uniqueEmployeesData : uniqueAgenciesData}
+              defaultSelect={
+                isEmployees ? "جميع الموظفين" : "جميع الجهات الحكومية"
               }
-            >
-              <SelectTrigger className="flex-1 w-full px-3.25 py-5.25 rounded-md bg-white border border-[#E5E7EB] text-[#9CA3AF] shadow-[0px_1px_2px_0px_#0000000D] flex-row-reverse focus:ring-0 focus:ring-offset-0">
-                <div className="flex items-center justify-between w-full flex-row-reverse gap-2">
-                  <div className="flex items-center gap-2">
-                    {/* 1. Logic for Employees */}
-                    {isEmployees && selectedEmployee !== "جميع الموظفين" && (
-                      <>
-                        <span>{selectedEmployee}</span>
-                        <Image
-                          src={
-                            uniqueEmployeesData.find(
-                              (e) => e.name === selectedEmployee,
-                            )?.photo || ""
-                          }
-                          width={24}
-                          height={24}
-                          alt=""
-                          className="rounded-full"
-                        />
-                      </>
-                    )}
-
-                    {/* 2. Logic for Agencies */}
-                    {isAgencies &&
-                      selectedAgency !== "جميع الجهات الحكومية" && (
-                        <>
-                          <span>{selectedAgency}</span>
-                          <Image
-                            src={
-                              uniqueAgenciesData.find(
-                                (a) => a.name === selectedAgency,
-                              )?.photo || ""
-                            }
-                            width={24}
-                            height={24}
-                            alt=""
-                            className="rounded-full"
-                          />
-                        </>
-                      )}
-
-                    {/* 3. Logic for Default/All state */}
-                    {((isEmployees && selectedEmployee === "جميع الموظفين") ||
-                      (isAgencies &&
-                        selectedAgency === "جميع الجهات الحكومية")) && (
-                      <SelectValue
-                        placeholder={
-                          isEmployees ? "جميع الموظفين" : "جميع الجهات الحكومية"
-                        }
-                      />
-                    )}
-                  </div>
-                </div>
-              </SelectTrigger>
-              <SelectContent
-                className="bg-white border border-[#E5E7EB] rounded-xl shadow-lg p-2 ring-0"
-                position="popper"
-              >
-                <SelectGroup>
-                  <SelectItem
-                    value={
-                      isEmployees ? "جميع الموظفين" : "جميع الجهات الحكومية"
-                    }
-                    className="flex justify-end cursor-pointer focus:bg-[#F3F4F6] transition-colors px-4 py-3 mb-1 rounded-lg"
-                  >
-                    {isEmployees ? "جميع الموظفين" : "جميع الجهات الحكومية"}
-                  </SelectItem>
-                  {isEmployees
-                    ? uniqueEmployeesData.map((r, i) => (
-                        <SelectItem
-                          key={i}
-                          value={r.name}
-                          className="flex justify-end items-center px-4 py-3 mb-1 rounded-lg text-right cursor-pointer focus:bg-[#F3F4F6] transition-colors"
-                        >
-                          <div className="flex items-center gap-2">
-                            <span>{r.name}</span>
-                            <Image
-                              src={r.photo}
-                              width={24}
-                              height={24}
-                              alt=""
-                              className="rounded-full"
-                            />
-                          </div>
-                        </SelectItem>
-                      ))
-                    : uniqueAgenciesData.map((r, i) => (
-                        <SelectItem
-                          key={i}
-                          value={r.name}
-                          className="flex justify-end items-center px-4 py-3 mb-1 rounded-lg text-right cursor-pointer focus:bg-[#F3F4F6] transition-colors"
-                        >
-                          <div className="flex items-center gap-2">
-                            <span>{r.name}</span>
-                            <Image
-                              src={r.photo}
-                              width={24}
-                              height={24}
-                              alt=""
-                              className="rounded-full"
-                            />
-                          </div>
-                        </SelectItem>
-                      ))}
-                </SelectGroup>
-              </SelectContent>
-            </Select>
+              isImage={
+                (isEmployees && selectedEmployee !== "جميع الموظفين") ||
+                (isAgencies && selectedAgency !== "جميع الجهات الحكومية")
+              }
+            />
           </div>
         )}
         <div className="flex-1 flex">

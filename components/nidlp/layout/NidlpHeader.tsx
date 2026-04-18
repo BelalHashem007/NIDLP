@@ -7,11 +7,13 @@ import { Bell, Building2, ChevronLeft, Menu, X } from "lucide-react";
 import Logo from "@/public/logo.png";
 import Avatar from "@/public/avatar@2x.png";
 import { BreadCrumbComponent } from "@/components/BreadCrumpComponent";
+import { getNavLabelForPathname } from "@/components/nidlp/layout/nidlp-nav-config";
 import { NidlpNavList } from "@/components/nidlp/layout/NidlpNavList";
 
 export function NidlpHeader() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const pathname = usePathname();
+  const pageTitle = getNavLabelForPathname(pathname);
   const drawerCloseRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
@@ -51,9 +53,11 @@ export function NidlpHeader() {
 
             <div className="flex min-w-0 flex-1 flex-col justify-center px-4">
               <BreadCrumbComponent />
-              <div className="min-w-0 truncate text-sm font-semibold">
-                لوحة التحكم الداخلية
-              </div>
+              {pageTitle ? (
+                <div className="min-w-0 truncate text-sm font-semibold">
+                  {pageTitle}
+                </div>
+              ) : null}
             </div>
 
             <div className="flex items-center gap-3">

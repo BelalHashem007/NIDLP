@@ -118,10 +118,59 @@ export const navConfig: NavEntry[] = [
   },
 ];
 
+/** Dynamic survey detail pages under `/nidlp/dashboard/survey-details/[id]`. */
+export function isSurveyDetailsPathname(pathname: string | null): boolean {
+  if (!pathname) return false;
+  return /^\/nidlp\/dashboard\/survey-details\/[^/]+$/.test(pathname);
+}
+
+const SURVEYS_DASHBOARD_HREF = "/nidlp/dashboard/surveys-dashboard";
+
+/** Whether `child` should show the active nav style for `pathname` (includes survey-details under surveys). */
+export function isNavChildActive(
+  child: NavChild,
+  pathname: string | null,
+): boolean {
+  if (!pathname) return false;
+  if (pathname === child.href) return true;
+  if (child.href === SURVEYS_DASHBOARD_HREF && isSurveyDetailsPathname(pathname)) {
+    return true;
+  }
+  return false;
+}
+
 export function groupHasActiveChild(
   entry: NavGroupEntry,
   pathname: string | null,
 ) {
   if (!pathname) return false;
-  return entry.children.some((c) => pathname === c.href);
+  return entry.children.some((c) => isNavChildActive(c, pathname));
+}
+
+/** Breadcrumb trail for survey detail (matches dashboard group → surveys dashboard → details). */
+export const surveyDetailsBreadcrumb = {
+  rootLabel: "لوحة التحكم",
+  rootHref: "/nidlp",
+  parentLabel: "لوحة تحكم الاستبيان",
+  parentHref: SURVEYS_DASHBOARD_HREF,
+  currentLabel: "تفاصيل الاستبيان",
+} as const;
+
+/** Label for the current route from `navConfig` (same rules as the dashboard breadcrumb). */
+export function getNavLabelForPathname(pathname: string | null): string | null {
+  if (!pathname) return null;
+  if (isSurveyDetailsPathname(pathname)) {
+    return surveyDetailsBreadcrumb.currentLabel;
+  }
+  const activeEntry = navConfig.find((entry) => {
+    if (entry.kind === "link") {
+      return entry.href === pathname;
+    }
+    return entry.children.some((child) => isNavChildActive(child, pathname));
+  });
+  if (!activeEntry) return null;
+  if (activeEntry.kind === "link") {
+    return activeEntry.label;
+  }
+  return activeEntry.children.find((c) => c.href === pathname)?.label ?? null;
 }

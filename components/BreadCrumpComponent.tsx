@@ -9,11 +9,47 @@ import {
 } from "@/components/ui/breadcrumb";
 import { ChevronLeft } from "lucide-react";
 import { usePathname } from "next/navigation";
-import { navConfig } from "./nidlp/layout/nidlp-nav-config";
+import {
+  isSurveyDetailsPathname,
+  navConfig,
+  surveyDetailsBreadcrumb,
+} from "./nidlp/layout/nidlp-nav-config";
 
 export function BreadCrumbComponent() {
   const pathName = usePathname();
   const path = pathName.split("/").filter(Boolean);
+
+  if (isSurveyDetailsPathname(pathName)) {
+    const b = surveyDetailsBreadcrumb;
+    return (
+      <Breadcrumb>
+        <BreadcrumbList className="text-white/70 font-medium gap-0 sm:gap-0">
+          <BreadcrumbItem>
+            <BreadcrumbLink href={b.rootHref} className="text-white/70">
+              {b.rootLabel}
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator className="px-1 text-white/70">
+            <ChevronLeft className="h-4 w-4" />
+          </BreadcrumbSeparator>
+          <BreadcrumbItem>
+            <BreadcrumbLink href={b.parentHref} className="text-white/70">
+              {b.parentLabel}
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator className="px-1 text-white/70">
+            <ChevronLeft className="h-4 w-4" />
+          </BreadcrumbSeparator>
+          <BreadcrumbItem>
+            <BreadcrumbPage className="text-white font-medium">
+              {b.currentLabel}
+            </BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+    );
+  }
+
   const activeEntry = navConfig.find((entry) => {
     if (entry.kind === "link") {
       return entry.href === pathName;
