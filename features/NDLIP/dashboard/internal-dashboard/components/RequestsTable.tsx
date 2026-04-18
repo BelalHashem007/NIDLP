@@ -48,12 +48,12 @@ export function RequestsTable({
           <h3 className="text-[#111827] font-bold text-xl/[28px]">
             احدث الطلبات
           </h3>
-          <button className="hover:cursor-pointer flex gap-2 font-bold rounded-[8px] border border-[#119DA9] py-3 px-4 text-[#119DA9] transition-all duration-500 hover:bg-[#119DA9] hover:text-[white]">
+          <button className="hover:cursor-pointer flex gap-2 font-bold rounded-lg border border-[#119DA9] py-3 px-4 text-[#119DA9] transition-all duration-500 hover:bg-[#119DA9] hover:text-[white]">
             عرض المزيد
           </button>
         </div>
 
-        <div className="mt-8 border border-[#D1D5DB] rounded-[8px]">
+        <div className="mt-8 border border-[#D1D5DB] rounded-lg">
           <Table>
             <TableHeader>
               <TableRow className="bg-blue-100/30 border-b-0! ">
