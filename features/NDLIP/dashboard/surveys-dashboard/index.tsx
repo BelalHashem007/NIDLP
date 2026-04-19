@@ -42,9 +42,9 @@ export default function SuverysDashboard() {
   return (
     <div className="mt-18 flex flex-col gap-8">
       <ReusableCardComponent>
-        <div className="grid grid-cols-[0.6fr_1fr_1fr] items-center">
+        <div className="flex flex-wrap justify-around items-center">
           <div className="pr-5 py-8 pl-7 gap-7 2xl:pr-10 2xl:py-16 2xl:pl-14 flex flex-col xl:flex-row 2xl:gap-14.5 items-center justify-center">
-            <div className="bg-[#F9FAFB] rounded-2xl md:p-5 xl:p-10 flex flex-col gap-2">
+            <div className="bg-[#F9FAFB] rounded-2xl p-5 xl:p-10 flex flex-col gap-2">
               <div className="font-bold text-[#111827] text-nowrap">
                 عدد الاستبانات
               </div>
@@ -53,29 +53,32 @@ export default function SuverysDashboard() {
               </div>
             </div>
           </div>
-          <div className="max-w-115.25">
-            <SemiCircleChart
-              title={"حسب حالة الاستبيان"}
-              activeValue={6}
-              inactiveValue={1}
-              type="suverysDashboard"
-              toplabels={["منشور", "غير منشور"]}
-            />
-          </div>
+          <div className="flex flex-wrap gap-30 items-center flex-1">
+            <div className="max-w-115.25 p-5">
+              <SemiCircleChart
+                title={"حسب حالة الاستبيان"}
+                activeValue={6}
+                inactiveValue={1}
+                type="suverysDashboard"
+                toplabels={["منشور", "غير منشور"]}
+              />
+            </div>
 
-          <div className="max-w-115.25">
-            <SemiCircleChart
-              title={"حسب نوع الاستبيان"}
-              activeValue={1}
-              inactiveValue={6}
-              type="suverysDashboard"
-              colors={["#632F84", "#119DA9"]}
-              toplabels={[
-                "استبيان قياس مستوي رضا القطاع الخاص",
-                "استبيان استطلاع عن خدمة او تحدي",
-              ]}
-              topLabelsPositions={[45, 20]}
-            />
+            <div className="max-w-115.25 p-5">
+              <SemiCircleChart
+                title={"حسب نوع الاستبيان"}
+                activeValue={1}
+                inactiveValue={6}
+                type="suverysDashboard"
+                colors={["#632F84", "#119DA9"]}
+                toplabels={[
+                  "استبيان قياس مستوي رضا القطاع الخاص",
+                  "استبيان استطلاع عن خدمة او تحدي",
+                ]}
+                topLabelsPositions={[80, 20]}
+                rightLabelPositions={[-60]}
+              />
+            </div>
           </div>
         </div>
       </ReusableCardComponent>

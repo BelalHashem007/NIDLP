@@ -4,6 +4,9 @@ import { Doughnut } from "react-chartjs-2";
 
 Chart.register(ArcElement);
 
+const CHART_WIDTH = 410;
+const CHART_HEIGHT = 176;
+
 const options = {
   rotation: -90,
   circumference: 180,
@@ -15,137 +18,6 @@ const options = {
   maintainAspectRatio: false,
 };
 
-const createCenterTextPlugin = ({
-  title,
-  activePercent,
-  inactivePercent,
-}: {
-  title: string;
-  activePercent: number;
-  inactivePercent: number;
-}) => ({
-  id: "centerText",
-  afterDraw: (chart: Chart) => {
-    const { ctx, chartArea } = chart;
-    if (!chartArea) return;
-
-    const centerX = (chartArea.left + chartArea.right) / 2;
-    const centerY = chartArea.bottom - 100;
-
-    ctx.save();
-
-    // Title
-    ctx.font = "bold 18px sans-serif";
-    ctx.fillStyle = "#6b7280";
-    ctx.textAlign = "center";
-    ctx.fillText(title, centerX, centerY + 60);
-
-    // inactive
-    ctx.beginPath();
-    ctx.arc(centerX - 65, centerY + 82, 4, 0, Math.PI * 2);
-    ctx.fillStyle = "#D1D5DB";
-    ctx.fill();
-
-    ctx.fillStyle = "#111827";
-    ctx.font = "bold 14px sans-serif";
-    ctx.fillText(`%${inactivePercent}`, centerX - 40, centerY + 85);
-
-    // active
-    ctx.beginPath();
-    ctx.arc(centerX + 15, centerY + 82, 4, 0, Math.PI * 2);
-    ctx.fillStyle = "#119DA9";
-    ctx.fill();
-
-    ctx.fillStyle = "#111827";
-    ctx.fillText(`%${activePercent}`, centerX + 40, centerY + 85);
-
-    ctx.restore();
-  },
-});
-
-const createTopLabelsPlugin = ({
-  activeLabel,
-  activeValue,
-  inactiveLabel,
-  inactiveValue,
-  topLabelsPositions,
-}: {
-  activeLabel: string;
-  activeValue: number;
-  inactiveLabel: string;
-  inactiveValue: number;
-  topLabelsPositions?: number[];
-}) => ({
-  id: "topLabels",
-  afterDraw(chart: Chart) {
-    const { ctx, chartArea } = chart;
-    if (!chartArea) return;
-
-    ctx.save();
-    ctx.font = "bold 14px sans-serif";
-    const lineHeight = 18;
-
-    // Helper function to handle wrapping
-    const wrapText = (text: string, x: number, y: number, maxWidth: number) => {
-      const words = text.split(" ");
-      let line = "";
-      let currentY = y;
-
-      for (let n = 0; n < words.length; n++) {
-        const testLine = line + words[n] + " ";
-        const metrics = ctx.measureText(testLine);
-        const testWidth = metrics.width;
-
-        if (testWidth > maxWidth && n > 0) {
-          ctx.fillText(line, x, currentY);
-          line = words[n] + " ";
-          currentY += lineHeight;
-        } else {
-          line = testLine;
-        }
-      }
-      ctx.fillText(line, x, currentY);
-      return currentY; // Return last Y position for the value/number below
-    };
-
-    // Right (active)
-    ctx.textAlign = "right";
-    ctx.fillStyle = "#6B7280";
-    const activeLabelY = wrapText(
-      activeLabel,
-      chartArea.right,
-      chartArea.top + (topLabelsPositions ? topLabelsPositions[0] : 90),
-      100,
-    );
-
-    ctx.fillStyle = "#111827";
-    ctx.fillText(
-      String(activeValue),
-      chartArea.right,
-      activeLabelY + lineHeight,
-    );
-
-    // Left (inactive)
-    ctx.textAlign = "left";
-    ctx.fillStyle = "#6B7280";
-    const inactiveLabelY = wrapText(
-      inactiveLabel,
-      chartArea.left,
-      chartArea.top + (topLabelsPositions ? topLabelsPositions[1] : 90),
-      100,
-    );
-
-    ctx.fillStyle = "#1D212F";
-    ctx.fillText(
-      String(inactiveValue),
-      chartArea.left,
-      inactiveLabelY + lineHeight,
-    );
-
-    ctx.restore();
-  },
-});
-
 export function SemiCircleChart({
   title,
   activeValue,
@@ -154,6 +26,7 @@ export function SemiCircleChart({
   colors,
   toplabels,
   topLabelsPositions,
+  rightLabelPositions,
 }: {
   title: string;
   activeValue: number;
@@ -162,11 +35,13 @@ export function SemiCircleChart({
   colors?: string[];
   toplabels?: string[];
   topLabelsPositions?: number[];
+  rightLabelPositions?: number[];
 }) {
   const total = activeValue + inactiveValue;
 
-  const activePercent = Math.round((activeValue / total) * 100);
-  const inactivePercent = Math.round((inactiveValue / total) * 100);
+  const activePercent = total > 0 ? Math.round((activeValue / total) * 100) : 0;
+  const inactivePercent =
+    total > 0 ? Math.round((inactiveValue / total) * 100) : 0;
 
   const data = {
     datasets: [
@@ -180,32 +55,70 @@ export function SemiCircleChart({
     ],
   };
 
-  const centerTextPlugin = createCenterTextPlugin({
-    title,
-    activePercent,
-    inactivePercent,
-  });
+  const activeLabel =
+    type === "suverysDashboard" && toplabels ? toplabels[0] : "نشط";
+  const inactiveLabel =
+    type === "suverysDashboard" && toplabels ? toplabels[1] : "معطل";
 
-  const topLabelsPlugin = createTopLabelsPlugin({
-    activeLabel:
-      type === "suverysDashboard" && toplabels ? toplabels[0] : "نشط",
-    activeValue,
-    inactiveLabel:
-      type === "suverysDashboard" && toplabels ? toplabels[1] : "معطل",
-    inactiveValue,
-    topLabelsPositions,
-  });
+  const activeTop = topLabelsPositions?.[0] ?? 30;
+  const inactiveTop = topLabelsPositions?.[1] ?? 110;
+
+  const activeRight = rightLabelPositions?.[0] ?? 0;
 
   return (
-    <div>
+    <div
+      className="relative shrink-0"
+      dir="ltr"
+      style={{ width: CHART_WIDTH, height: CHART_HEIGHT }}
+    >
       <Doughnut
         key={type}
         data={data}
         options={options}
-        plugins={[centerTextPlugin, topLabelsPlugin]}
-        width={410}
-        height={176}
+        width={CHART_WIDTH}
+        height={CHART_HEIGHT}
       />
+
+      <div className="pointer-events-none absolute inset-0 z-10 flex flex-col">
+        {/* Top: inactive (left) & active (right) */}
+        <div
+          className="absolute -left-10 flex max-w-25 flex-col gap-0 text-left text-sm font-bold leading-4.5"
+          style={{ top: inactiveTop }}
+        >
+          <span className="text-[#6B7280]">{inactiveLabel}</span>
+          <span className="text-[#1D212F] text-center">{inactiveValue}</span>
+        </div>
+        <div
+          className="absolute flex max-w-25 flex-col gap-0 text-right text-sm font-bold leading-4.5"
+          style={{ top: activeTop, right: activeRight }}
+        >
+          <span className="text-[#6B7280]">{activeLabel}</span>
+          <span className="text-[#111827] text-center">{activeValue}</span>
+        </div>
+
+        {/* Bottom center: title + legend percents */}
+        <div className="mt-auto flex flex-col items-center pb-1">
+          <p className="text-center text-lg font-bold text-[#6b7280]">
+            {title}
+          </p>
+          <div className="mt-1 flex items-center gap-6 text-sm font-bold text-[#111827]">
+            <span className="flex items-center gap-2">
+              <span
+                className="size-2 shrink-0 rounded-full bg-[#D1D5DB]"
+                aria-hidden
+              />
+              %{inactivePercent}
+            </span>
+            <span className="flex items-center gap-2">
+              <span
+                className="size-2 shrink-0 rounded-full bg-[#119DA9]"
+                aria-hidden
+              />
+              %{activePercent}
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
