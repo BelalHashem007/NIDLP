@@ -80,7 +80,7 @@ export function NidlpNavList({ variant, onNavigate }: NidlpNavListProps) {
                 }`}
               >
                 <Icon
-                  className={`h-4 w-4 shrink-0 ${active ? "text-[#2E1866]" : "text-slate-500"}`}
+                  className={`h-4 w-4 shrink-0 ${active ? "text-[#4590BF] " : "text-slate-500"}`}
                 />
                 <span className="truncate">{entry.label}</span>
               </Link>
@@ -101,7 +101,7 @@ export function NidlpNavList({ variant, onNavigate }: NidlpNavListProps) {
               >
                 <div className="flex gap-2">
                   <Icon
-                    className={`h-4 w-4 shrink-0 ${groupActive ? "text-[#4590BF] fill-[#4590BF]" : "text-slate-500"}`}
+                    className={`h-4 w-4 shrink-0 ${groupActive ? "text-[#4590BF]" : "text-slate-500"}`}
                   />
                   <span
                     className={`min-w-0 flex-1 truncate ${groupActive ? "font-bold " : ""}`}
