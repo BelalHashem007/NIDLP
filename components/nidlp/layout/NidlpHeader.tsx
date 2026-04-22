@@ -4,16 +4,16 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Bell, Building2, ChevronLeft, Menu, X } from "lucide-react";
-import Logo from "@/public/logo.png";
-import Avatar from "@/public/avatar@2x.png";
+import Logo from "@/public/assets/logo.png";
+import Avatar from "@/public/assets/avatar@2x.png";
 import { BreadCrumbComponent } from "@/components/BreadCrumpComponent";
-import { getNavLabelForPathname } from "@/components/nidlp/layout/nidlp-nav-config";
+import { getPageTitleForPathname } from "@/components/nidlp/layout/breadcrumb-config";
 import { NidlpNavList } from "@/components/nidlp/layout/NidlpNavList";
 
 export function NidlpHeader() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const pathname = usePathname();
-  const pageTitle = getNavLabelForPathname(pathname);
+  const pageTitle = getPageTitleForPathname(pathname);
   const drawerCloseRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
