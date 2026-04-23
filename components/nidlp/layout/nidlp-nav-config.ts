@@ -82,7 +82,7 @@ export const navConfig: NavEntry[] = [
   },
   {
     kind: "link",
-    href: "/nidlp/companies",
+    href: "/nidlp/company",
     label: "إدارة الشركات",
     icon: Building,
   },

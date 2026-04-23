@@ -1,5 +1,5 @@
-import ExternalDashboard from "@/features/NDLIP/dashboard/external-dashboard";
+import ExternalDashboard from "@/features/NIDLP/dashboard/external-dashboard";
 
 export default function page() {
-  return <ExternalDashboard/>;
+  return <ExternalDashboard />;
 }

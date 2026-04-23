@@ -3,7 +3,7 @@
 import { SubmitHandler, useForm, Controller } from "react-hook-form";
 import { FormInput } from "./FormInput";
 import { AgencyCitySelect } from "./AgencyCitySelect";
-import { agenciesData } from "@/features/NDLIP/data/agency-data";
+import { agenciesData } from "@/features/NIDLP/data/agency-data";
 import { Save } from "lucide-react";
 
 export type Inputs = {

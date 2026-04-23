@@ -54,7 +54,11 @@ export const breadcrumbConfig: BreadcrumbNode[] = [
       { href: "/nidlp/agency/show", label: "عرض الجهة" },
     ],
   },
-  { href: "/nidlp/companies", label: "إدارة الشركات" },
+  {
+    href: "/nidlp/company",
+    label: "إدارة الشركات",
+    children: [{ href: "/nidlp/company/show", label: "عرض الشركة" }],
+  },
   { href: "/nidlp/users", label: "إدارة المستخدمين" },
   { href: "/nidlp/news", label: "إدارة الاخبار" },
   { href: "/nidlp/questions", label: "إدارة الاسئلة الشائعة" },

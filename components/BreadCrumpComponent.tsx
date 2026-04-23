@@ -22,21 +22,18 @@ export function BreadCrumbComponent() {
 
   return (
     <Breadcrumb>
-      <BreadcrumbList className="text-white/70 font-medium gap-0 sm:gap-0">
+      <BreadcrumbList className="font-medium gap-0 sm:gap-0">
         {trail.map((crumb, i) => {
           const isLast = i === lastIndex;
           return (
             <Fragment key={`${crumb.href}-${i}`}>
               <BreadcrumbItem>
                 {isLast ? (
-                  <BreadcrumbPage className="text-white font-medium">
+                  <BreadcrumbPage className="text-white/70 font-medium">
                     {crumb.label}
                   </BreadcrumbPage>
                 ) : (
-                  <BreadcrumbLink
-                    href={crumb.href}
-                    className="text-white/70"
-                  >
+                  <BreadcrumbLink href={crumb.href} className="text-white">
                     {crumb.label}
                   </BreadcrumbLink>
                 )}

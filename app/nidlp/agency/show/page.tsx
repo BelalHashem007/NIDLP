@@ -1,4 +1,4 @@
-import { AgencyShowView } from "@/features/NDLIP/agency/show";
+import { AgencyShowView } from "@/features/NIDLP/agency/show";
 import { redirect } from "next/navigation";
 
 export default async function page({
