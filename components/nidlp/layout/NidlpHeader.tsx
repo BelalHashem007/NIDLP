@@ -51,7 +51,7 @@ export function NidlpHeader() {
               <Image src={Logo} alt="Logo" priority />
             </div>
 
-            <div className="flex min-w-0 flex-1 flex-col justify-center px-4">
+            <div className="flex min-w-0 flex-1 flex-col justify-center gap-1.5 px-4">
               <BreadCrumbComponent />
               {pageTitle ? (
                 <div className="min-w-0 truncate text-sm font-semibold">

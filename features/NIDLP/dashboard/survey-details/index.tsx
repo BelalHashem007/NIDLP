@@ -2,16 +2,13 @@ import ReusableCardComponent from "@/components/nidlp/ReusableCardComponent";
 import {
   MOCK_SURVEYS,
   SURVEY_RESULTS,
-} from "@/features/NDLIP/data/surveys-dashboard-data";
+} from "@/features/NIDLP/data/surveys-dashboard-data";
 import { SurveyText, SurveyTextQuestion } from "./components/survey-text";
 import {
   SurveyMultiChoice,
   SurveyMultiChoiceQuestion,
 } from "./components/survey-multi-choice";
-import {
-  SurveyRating,
-  SurveyRatingQuestion,
-} from "./components/survey-rating";
+import { SurveyRating, SurveyRatingQuestion } from "./components/survey-rating";
 
 export function SurveyDetails({ surveyId }: { surveyId: string }) {
   const survey = MOCK_SURVEYS.find((s) => s.id === surveyId);
@@ -47,12 +44,7 @@ export function SurveyDetails({ surveyId }: { surveyId: string }) {
             />
           );
         else if (type === "rating")
-          return (
-            <SurveyRating
-              question={q as SurveyRatingQuestion}
-              key={i}
-            />
-          );
+          return <SurveyRating question={q as SurveyRatingQuestion} key={i} />;
         return null;
       })}
     </div>

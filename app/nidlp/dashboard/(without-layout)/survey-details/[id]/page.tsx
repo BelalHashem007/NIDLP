@@ -1,4 +1,4 @@
-import { SurveyDetails } from "@/features/NDLIP/dashboard/survey-details";
+import { SurveyDetails } from "@/features/NIDLP/dashboard/survey-details";
 
 export default async function SurveyDetailsPage({
   params,

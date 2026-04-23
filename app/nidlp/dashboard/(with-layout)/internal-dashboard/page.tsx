@@ -1,4 +1,4 @@
-import InternalDashboardIndex from "@/features/NDLIP/dashboard/internal-dashboard";
+import InternalDashboardIndex from "@/features/NIDLP/dashboard/internal-dashboard";
 import { Suspense } from "react";
 
 export default async function page({
