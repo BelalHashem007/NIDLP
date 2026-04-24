@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { TableAllOrders } from "./components/Table";
+
+import { Table } from "@/components/shared/table/Table";
+
 import ReassignOverlay from "./components/ReassignOverlay";
 import { thData } from "./config/tableColumns";
 import { tabsData } from "./config/tabs";
@@ -16,7 +18,7 @@ function AllOrders() {
 
   const handleActionClick = (action: Action, row: OrderRow) => {
     if (action.type === "overlay" && action.overlayKey) {
-      setOverlay({ type: action.overlayKey , row });
+      setOverlay({ type: action.overlayKey, row });
     }
   };
 
@@ -40,13 +42,13 @@ function AllOrders() {
     setOverlay(null);
   };
 
-  if (loading) return <p>جاري التحميل...</p>;
+  if (loading) return <p>جارٍ التحميل...</p>;
 
   return (
     <div>
-      <TableAllOrders
+      <Table
         tabsData={tabsData}
-        rows={data}           // ✅ من useOrders مش tdData ثابتة
+        rows={data}
         columns={thData}
         onActionClick={handleActionClick}
       />
@@ -54,7 +56,7 @@ function AllOrders() {
       {overlay?.type === "reassign" && (
         <ReassignOverlay
           onClose={() => setOverlay(null)}
-          onReassign={handleReassign} // ✅ بيحدّث الـ state فعلاً
+          onReassign={handleReassign}
         />
       )}
     </div>
