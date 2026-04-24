@@ -2,8 +2,14 @@
 @import "tw-animate-css";
 
 html {
-  font-family: "Loew Next Arabic", "Tahoma", system-ui, -apple-system, "Segoe UI",
-    Arial, sans-serif;
+  font-family:
+    "Loew Next Arabic",
+    "Tahoma",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Arial,
+    sans-serif;
   direction: rtl;
   scroll-behavior: smooth;
 }

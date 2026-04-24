@@ -1,10 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import LogoFooter from "@/public/logo-footer.png";
+import LogoFooter from "@/public/assets/logo-footer.png";
 import { NidlpNavList } from "@/components/nidlp/layout/NidlpNavList";
 
-export { navConfig, type NavGroupEntry } from "@/components/nidlp/layout/nidlp-nav-config";
+export {
+  navConfig,
+  type NavGroupEntry,
+} from "@/components/nidlp/layout/nidlp-nav-config";
 
 export function NidlpSidebar() {
   return (

@@ -1,56 +1,52 @@
 "use client";
+import { Fragment } from "react";
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
+  BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { ChevronLeft } from "lucide-react";
+// import { getBreadcrumbTrail } from "./nidlp/layout/breadcrumb-config";
 import { usePathname } from "next/navigation";
-import { navConfig } from "../nidlp/layout/nidlp-nav-config";
+import { getBreadcrumbTrail } from "../nidlp/layout/breadcrumb-config";
 
 export function BreadCrumbComponent() {
-  const pathName = usePathname();
-  const path = pathName.split("/").filter(Boolean);
-  const activeEntry = navConfig.find((entry) => {
-    if (entry.kind === "link") {
-      return entry.href === pathName;
-    }
-    return entry.children.some((child) => child.href === pathName);
-  });
-  if (!activeEntry) return null;
+  const pathname = usePathname();
+  const trail = getBreadcrumbTrail(pathname);
+
+  if (trail.length === 0) return null;
+
+  const lastIndex = trail.length - 1;
 
   return (
     <Breadcrumb>
-      <BreadcrumbList className="text-white/70 font-medium gap-0 sm:gap-0">
-        <BreadcrumbItem>
-          {activeEntry.kind === "group" ? (
-            <BreadcrumbLink href={"/" + path[0]}>
-              {activeEntry.label}
-            </BreadcrumbLink>
-          ) : (
-            <BreadcrumbLink href={activeEntry.href}>
-              {activeEntry.label}
-            </BreadcrumbLink>
-          )}
-        </BreadcrumbItem>
-        {activeEntry.kind === "group" && (
-          <>
-            <BreadcrumbSeparator className="px-1">
-              <ChevronLeft className="h-4 w-4" />
-            </BreadcrumbSeparator>
-            <BreadcrumbItem>
-              <BreadcrumbLink
-                href={
-                  activeEntry.children.find((c) => c.href === pathName)?.href
-                }
-              >
-                {activeEntry.children.find((c) => c.href === pathName)?.label}
-              </BreadcrumbLink>
-            </BreadcrumbItem>
-          </>
-        )}
+      <BreadcrumbList className="font-medium gap-0 sm:gap-0">
+        {trail.map((crumb, i) => {
+          const isLast = i === lastIndex;
+          return (
+            <Fragment key={`${crumb.href}-${i}`}>
+              <BreadcrumbItem>
+                {isLast ? (
+                  <BreadcrumbPage className="text-white/70 font-medium">
+                    {crumb.label}
+                  </BreadcrumbPage>
+                ) : (
+                  <BreadcrumbLink href={crumb.href} className="text-white">
+                    {crumb.label}
+                  </BreadcrumbLink>
+                )}
+              </BreadcrumbItem>
+              {!isLast && (
+                <BreadcrumbSeparator className="px-1 text-white/70">
+                  <ChevronLeft className="h-4 w-4" />
+                </BreadcrumbSeparator>
+              )}
+            </Fragment>
+          );
+        })}
       </BreadcrumbList>
     </Breadcrumb>
   );
