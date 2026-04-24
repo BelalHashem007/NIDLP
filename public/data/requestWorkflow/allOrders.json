@@ -5,21 +5,21 @@
     "submission_date": "2024/05/10",
     "order_type": "تحدي",
     "applicant": {
-      "name": "الهيئة العامة للطيران المدني",
-      "photo": "/GACA.png"
+      "name": "سلة",
+      "photo": "/company-13.png"
     },
     "assigned_employee": {
-      "name": "سارة خالد السعدي",
-      "photo": "/sarah.png"
+      "name": "عبدالله فهد العتيبى",
+      "photo": "/abdullah2.png"
     },
     "assignment_date": "2024/06/19",
     "last_update": "2024/06/27",
     "due_date": "2024/07/10",
     "status": {
       "key": "in_progress",
-      "text": "بانتظار اسناد الطلب لجهة حكومية",
-      "color": "#1A4D2E",
-      "bgColor": "#E5F3EB"
+      "text": "جديد",
+      "color": "#1D7A8C",
+      "bgColor": "#E0F7FA"
     }
   },
   {
@@ -28,21 +28,21 @@
     "submission_date": "2024/04/13",
     "order_type": "اقتراح",
     "applicant": {
-      "name": "هيئة الزكاة والضريبة والجمارك",
-      "photo": "/ZTCA.png"
+      "name": "مجلس الشراكة اللوجستى",
+      "photo": "/company-14.png"
     },
     "assigned_employee": {
-      "name": "عبدالله محمد العتيبي",
-      "photo": "/abdullah.png"
+      "name": "سارة خالد السعدى",
+      "photo": "/sarah.png"
     },
     "assignment_date": "2024/04/20",
     "last_update": "2024/06/27",
     "due_date": "2024/07/05",
     "status": {
       "key": "in_progress",
-      "text": "جاري العمل عليها من قبل الجهة الحكومية",
-      "color": "#384985",
-      "bgColor": "#E9E9F9"
+      "text": "بانتظار اسناد الطلب لجهة حكومية",
+      "color": "#2E5A41",
+      "bgColor": "#E8F5E9"
     }
   },
   {
@@ -51,8 +51,8 @@
     "submission_date": "2024/04/19",
     "order_type": "اقتراح",
     "applicant": {
-      "name": "وزارة النقل والخدمات اللوجستية",
-      "photo": "/MTLS.png"
+      "name": "زاجل",
+      "photo": "/company-12.png"
     },
     "assigned_employee": {
       "name": "ليلى احمد الزهراني",
@@ -64,8 +64,8 @@
     "status": {
       "key": "in_progress",
       "text": "جاري العمل عليه",
-      "color": "#1E40AF",
-      "bgColor": "#DBEAFE"
+      "color": "#1A56B3",
+      "bgColor": "#E8EAF6"
     }
   },
   {
@@ -74,21 +74,21 @@
     "submission_date": "2024/05/10",
     "order_type": "تحدي",
     "applicant": {
-      "name": "الهيئة العامة للطيران المدني",
-      "photo": "/GACA.png"
+      "name": "مراحل",
+      "photo": "/company-15.png"
     },
     "assigned_employee": {
-      "name": "سارة خالد السعدي",
-      "photo": "/sarah.png"
+      "name": "فيصل احمد الدوسرى",
+      "photo": "/anonymous.png"
     },
     "assignment_date": "2024/06/19",
     "last_update": "2024/06/27",
     "due_date": "2024/07/10",
     "status": {
       "key": "in_progress",
-      "text": "بانتظار اسناد الطلب لجهة حكومية",
-      "color": "#1A4D2E",
-      "bgColor": "#E5F3EB"
+      "text": "جاري العمل عليها من قبل الجهة الحكومية",
+      "color": "#4A148C",
+      "bgColor": "#EDE7F6"
     }
   },
   {
@@ -97,21 +97,21 @@
     "submission_date": "2024/04/13",
     "order_type": "اقتراح",
     "applicant": {
-      "name": "هيئة الزكاة والضريبة والجمارك",
-      "photo": "/ZTCA.png"
+      "name": "مجلس الشراكة اللوجستى",
+      "photo": "/company-14.png"
     },
     "assigned_employee": {
-      "name": "عبدالله محمد العتيبي",
-      "photo": "/abdullah.png"
+      "name": "احمد احمد الراشد",
+      "photo": "/ahmed2.png"
     },
     "assignment_date": "2024/04/20",
     "last_update": "2024/06/27",
     "due_date": "2024/07/05",
     "status": {
-      "key": "delayed",
-      "text": "متأخر",
-      "color": "#384985",
-      "bgColor": "#E9E9F9"
+      "key": "in_progress",
+      "text": "الاسناد مرفوض من الجهة الحكومية",
+      "color": "#B71C1C",
+      "bgColor": "#FFEBEE"
     }
   },
   {
@@ -120,21 +120,21 @@
     "submission_date": "2024/03/25",
     "order_type": "تحدي",
     "applicant": {
-      "name": "الهيئة العامة للنقل",
-      "photo": "/TGA.png"
+      "name": "المجدوعى",
+      "photo": "/company-10.png"
     },
     "assigned_employee": {
-      "name": "احمد احمد الراشد",
-      "photo": "/ahmed.png"
+      "name": "نورة محمد الشهرى",
+      "photo": "/noura2.png"
     },
     "assignment_date": "2024/03/28",
     "last_update": "2024/06/27",
     "due_date": "2024/06/30",
     "status": {
-      "key": "completed",
-      "text": "الاسناد مرفوض من الجهة الحكومية",
-      "color": "#991B1B",
-      "bgColor": "#FEE2E2"
+      "key": "in_progress",
+      "text": "بانتظار مراجعة التحديث",
+      "color": "#33691E",
+      "bgColor": "#F1F8E9"
     }
   },
   {
@@ -143,21 +143,21 @@
     "submission_date": "2024/02/17",
     "order_type": "اقتراح",
     "applicant": {
-      "name": "هيئة الزكاة والضريبة والجمارك",
-      "photo": "/ZTCA.png"
+      "name": "امازون",
+      "photo": "/company-1.png"
     },
     "assigned_employee": {
-      "name": "ليلى الزهراني",
-      "photo": "/leila.png"
+      "name": "احمد خالد القحطاني",
+      "photo": "/ahmed.png"
     },
     "assignment_date": "2024/02/24",
     "last_update": "2024/06/27",
     "due_date": "2024/07/03",
     "status": {
       "key": "in_progress",
-      "text": "جاري العمل عليها من قبل الجهة الحكومية",
-      "color": "#384985",
-      "bgColor": "#E9E9F9"
+      "text": "الاسناد مرفوض من الجهة الحكومية",
+      "color": "#B71C1C",
+      "bgColor": "#FFEBEE"
     }
   },
   {
@@ -166,21 +166,21 @@
     "submission_date": "2024/03/20",
     "order_type": "اقتراح",
     "applicant": {
-      "name": "وزارة النقل والخدمات اللوجستية",
-      "photo": "/MTLS.png"
+      "name": "ارامكس",
+      "photo": "/company-8.png"
     },
     "assigned_employee": {
-      "name": "نورة محمد الشهري",
-      "photo": "/nora.png"
+      "name": "ليلى الزهرانى",
+      "photo": "/anonymous.png"
     },
     "assignment_date": "2024/04/01",
     "last_update": "2024/06/22",
     "due_date": "2024/06/28",
     "status": {
-      "key": "updating",
-      "text": "بانتظار مراجعة التحديث",
-      "color": "#3B5E0B",
-      "bgColor": "#EFFFD9"
+      "key": "in_progress",
+      "text": "بانتظار تحديث البيانات",
+      "color": "#6A1B9A",
+      "bgColor": "#F3E5F5"
     }
   },
   {
@@ -189,146 +189,77 @@
     "submission_date": "2024/03/25",
     "order_type": "تحدي",
     "applicant": {
-      "name": "الهيئة العامة للنقل",
-      "photo": "/TGA.png"
+      "name": "نون",
+      "photo": "/company-11.png"
     },
     "assigned_employee": {
-      "name": "احمد احمد الراشد",
-      "photo": "/ahmed.png"
+      "name": "نورة سلطان احمد",
+      "photo": "/nora.png"
     },
     "assignment_date": "2024/03/28",
     "last_update": "2024/06/27",
     "due_date": "2024/06/30",
     "status": {
-      "key": "completed",
-      "text": "الاسناد مرفوض من الجهة الحكومية",
-      "color": "#991B1B",
-      "bgColor": "#FEE2E2"
+      "key": "in_progress",
+      "text": "بانتظار اسناد الطلب لجهة حكومية",
+      "color": "#2E5A41",
+      "bgColor": "#E8F5E9"
     }
   },
   {
     "id": 10,
-    "order_number": "962-258-79",
-    "submission_date": "2024/02/26",
-    "order_type": "تحدي",
+    "order_number": "679-763-60",
+    "submission_date": "2024/04/13",
+    "order_type": "اقتراح",
     "applicant": {
-      "name": "الهيئة العامة للنقل",
-      "photo": "/TGA.png"
+      "name": "مجلس الشراكة اللوجستى",
+      "photo": "/company-14.png"
     },
     "assigned_employee": {
-      "name": "احمد خالد القحطاني",
-      "photo": "/ahmed.png"
+      "name": "سارة خالد السعدى",
+      "photo": "/sarah.png"
     },
-    "assignment_date": "2024/02/28",
-    "last_update": "2024/06/24",
-    "due_date": "2024/06/20",
+    "assignment_date": "2024/04/20",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/05",
     "status": {
-      "key": "delayed",
-      "text": "متأخر",
-      "color": "#92400E",
-      "bgColor": "#FEF3C7"
+      "key": "in_progress",
+      "text": "بانتظار اسناد الطلب لجهة حكومية",
+      "color": "#2E5A41",
+      "bgColor": "#E8F5E9"
     }
   },
   {
     "id": 11,
-    "order_number": "691-826-50",
-    "submission_date": "2024/02/17",
-    "order_type": "اقتراح",
+    "order_number": "586-270-90",
+    "submission_date": "2024/05/10",
+    "order_type": "تحدي",
     "applicant": {
-      "name": "هيئة الزكاة والضريبة والجمارك",
-      "photo": "/ZTCA.png"
+      "name": "سلة",
+      "photo": "/company-13.png"
     },
     "assigned_employee": {
-      "name": "ليلى الزهراني",
-      "photo": "/leila.png"
+      "name": "عبدالله فهد العتيبى",
+      "photo": "/abdullah2.png"
     },
-    "assignment_date": "2024/02/24",
+    "assignment_date": "2024/06/19",
     "last_update": "2024/06/27",
-    "due_date": "2024/07/03",
+    "due_date": "2024/07/10",
     "status": {
       "key": "in_progress",
-      "text": "جاري العمل عليها من قبل الجهة الحكومية",
-      "color": "#384985",
-      "bgColor": "#E9E9F9"
+      "text": "جديد",
+      "color": "#1D7A8C",
+      "bgColor": "#E0F7FA"
     }
   },
   {
     "id": 12,
-    "order_number": "710-994-58",
-    "submission_date": "2024/03/25",
-    "order_type": "تحدي",
-    "applicant": {
-      "name": "الهيئة العامة للنقل",
-      "photo": "/TGA.png"
-    },
-    "assigned_employee": {
-      "name": "احمد احمد الراشد",
-      "photo": "/ahmed.png"
-    },
-    "assignment_date": "2024/03/28",
-    "last_update": "2024/06/27",
-    "due_date": "2024/06/30",
-    "status": {
-      "key": "completed",
-      "text": "الاسناد مرفوض من الجهة الحكومية",
-      "color": "#991B1B",
-      "bgColor": "#FEE2E2"
-    }
-  },
-  {
-    "id": 13,
-    "order_number": "317-807-81",
-    "submission_date": "2024/01/31",
-    "order_type": "تحدي",
-    "applicant": {
-      "name": "الهيئة العامة للطيران المدني",
-      "photo": "/GACA.png"
-    },
-    "assigned_employee": {
-      "name": "سارة خالد السعدي",
-      "photo": "/sarah.png"
-    },
-    "assignment_date": "2024/02/06",
-    "last_update": "2024/04/14",
-    "due_date": "2024/05/01",
-    "status": {
-      "key": "in_progress",
-      "text": "بانتظار اسناد الطلب لجهة حكومية",
-      "color": "#1A4D2E",
-      "bgColor": "#E5F3EB"
-    }
-  },
-  {
-    "id": 14,
-    "order_number": "112-391-15",
-    "submission_date": "2024/01/20",
-    "order_type": "تحدي",
-    "applicant": {
-      "name": "هيئة الزكاة والضريبة والجمارك",
-      "photo": "/ZTCA.png"
-    },
-    "assigned_employee": {
-      "name": "فيصل احمد الدوسري",
-      "photo": "/ahmed.png"
-    },
-    "assignment_date": "2024/01/25",
-    "last_update": "2024/04/01",
-    "due_date": "2024/04/20",
-    "status": {
-      "key": "updating",
-      "text": "بانتظار تحديث البيانات",
-      "color": "#6D007E",
-      "bgColor": "#FDEEFF"
-    }
-  },
-  {
-    "id": 15,
     "order_number": "946-566-14",
     "submission_date": "2024/04/19",
     "order_type": "اقتراح",
     "applicant": {
-      "name": "وزارة النقل والخدمات اللوجستية",
-      "photo": "/MTLS.png"
+      "name": "زاجل",
+      "photo": "/company-12.png"
     },
     "assigned_employee": {
       "name": "ليلى احمد الزهراني",
@@ -340,100 +271,169 @@
     "status": {
       "key": "in_progress",
       "text": "جاري العمل عليه",
-      "color": "#1E40AF",
-      "bgColor": "#DBEAFE"
+      "color": "#1A56B3",
+      "bgColor": "#E8EAF6"
     }
   },
   {
-    "id": 16,
-    "order_number": "317-807-81",
-    "submission_date": "2024/01/31",
+    "id": 13,
+    "order_number": "586-270-90",
+    "submission_date": "2024/05/10",
     "order_type": "تحدي",
     "applicant": {
-      "name": "الهيئة العامة للطيران المدني",
-      "photo": "/GACA.png"
+      "name": "مراحل",
+      "photo": "/company-15.png"
     },
     "assigned_employee": {
-      "name": "سارة خالد السعدي",
-      "photo": "/sarah.png"
+      "name": "فيصل احمد الدوسرى",
+      "photo": "/anonymous.png"
     },
-    "assignment_date": "2024/02/06",
-    "last_update": "2024/04/14",
-    "due_date": "2024/05/01",
-    "status": {
-      "key": "delayed",
-      "text": "متأخر ",
-      "color": "#1A4D2E",
-      "bgColor": "#E5F3EB"
-    }
-  },
-  {
-    "id": 17,
-    "order_number": "112-391-15",
-    "submission_date": "2024/01/20",
-    "order_type": "تحدي",
-    "applicant": {
-      "name": "هيئة الزكاة والضريبة والجمارك",
-      "photo": "/ZTCA.png"
-    },
-    "assigned_employee": {
-      "name": "فيصل احمد الدوسري",
-      "photo": "/ahmed.png"
-    },
-    "assignment_date": "2024/01/25",
-    "last_update": "2024/04/01",
-    "due_date": "2024/04/20",
-    "status": {
-      "key": "updating",
-      "text": "بانتظار تحديث البيانات",
-      "color": "#6D007E",
-      "bgColor": "#FDEEFF"
-    }
-  },
-  {
-    "id": 18,
-    "order_number": "317-807-81",
-    "submission_date": "2024/01/31",
-    "order_type": "تحدي",
-    "applicant": {
-      "name": "الهيئة العامة للطيران المدني",
-      "photo": "/GACA.png"
-    },
-    "assigned_employee": {
-      "name": "سارة خالد السعدي",
-      "photo": "/sarah.png"
-    },
-    "assignment_date": "2024/02/06",
-    "last_update": "2024/04/14",
-    "due_date": "2024/05/01",
+    "assignment_date": "2024/06/19",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/10",
     "status": {
       "key": "in_progress",
-      "text": "بانتظار اسناد الطلب لجهة حكومية",
-      "color": "#1A4D2E",
-      "bgColor": "#E5F3EB"
+      "text": "جاري العمل عليها من قبل الجهة الحكومية",
+      "color": "#4A148C",
+      "bgColor": "#EDE7F6"
     }
   },
   {
-    "id": 19,
+    "id": 14,
     "order_number": "679-763-60",
     "submission_date": "2024/04/13",
     "order_type": "اقتراح",
     "applicant": {
-      "name": "هيئة الزكاة والضريبة والجمارك",
-      "photo": "/ZTCA.png"
+      "name": "مجلس الشراكة اللوجستى",
+      "photo": "/company-14.png"
     },
     "assigned_employee": {
-      "name": "عبدالله محمد العتيبي",
-      "photo": "/abdullah.png"
+      "name": "احمد احمد الراشد",
+      "photo": "/ahmed2.png"
     },
     "assignment_date": "2024/04/20",
     "last_update": "2024/06/27",
     "due_date": "2024/07/05",
     "status": {
       "key": "in_progress",
-      "text": "جاري العمل عليها من قبل الجهة الحكومية",
-      "color": "#384985",
-      "bgColor": "#E9E9F9"
+      "text": "الاسناد مرفوض من الجهة الحكومية",
+      "color": "#B71C1C",
+      "bgColor": "#FFEBEE"
+    }
+  },
+  {
+    "id": 15,
+    "order_number": "684-737-62",
+    "submission_date": "2024/03/20",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "ارامكس",
+      "photo": "/company-8.png"
+    },
+    "assigned_employee": {
+      "name": "ليلى الزهرانى",
+      "photo": "/anonymous.png"
+    },
+    "assignment_date": "2024/04/01",
+    "last_update": "2024/06/22",
+    "due_date": "2024/06/28",
+    "status": {
+      "key": "in_progress",
+      "text": "بانتظار تحديث البيانات",
+      "color": "#6A1B9A",
+      "bgColor": "#F3E5F5"
+    }
+  },
+  {
+    "id": 16,
+    "order_number": "710-994-58",
+    "submission_date": "2024/03/25",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "المجدوعى",
+      "photo": "/company-10.png"
+    },
+    "assigned_employee": {
+      "name": "نورة محمد الشهرى",
+      "photo": "/noura2.png"
+    },
+    "assignment_date": "2024/03/28",
+    "last_update": "2024/06/27",
+    "due_date": "2024/06/30",
+    "status": {
+      "key": "in_progress",
+      "text": "بانتظار مراجعة التحديث",
+      "color": "#33691E",
+      "bgColor": "#F1F8E9"
+    }
+  },
+  {
+    "id": 17,
+    "order_number": "710-994-58",
+    "submission_date": "2024/03/25",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "نون",
+      "photo": "/company-11.png"
+    },
+    "assigned_employee": {
+      "name": "نورة سلطان احمد",
+      "photo": "/noura.png"
+    },
+    "assignment_date": "2024/03/28",
+    "last_update": "2024/06/27",
+    "due_date": "2024/06/30",
+    "status": {
+      "key": "in_progress",
+      "text": "بانتظار اسناد الطلب لجهة حكومية",
+      "color": "#2E5A41",
+      "bgColor": "#E8F5E9"
+    }
+  },
+  {
+    "id": 18,
+    "order_number": "691-826-50",
+    "submission_date": "2024/02/17",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "امازون",
+      "photo": "/company-1.png"
+    },
+    "assigned_employee": {
+      "name": "احمد خالد القحطاني",
+      "photo": "/ahmed.png"
+    },
+    "assignment_date": "2024/02/24",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/03",
+    "status": {
+      "key": "in_progress",
+      "text": "الاسناد مرفوض من الجهة الحكومية",
+      "color": "#B71C1C",
+      "bgColor": "#FFEBEE"
+    }
+  },
+  {
+    "id": 19,
+    "order_number": "586-270-90",
+    "submission_date": "2024/05/10",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "سلة",
+      "photo": "/company-13.png"
+    },
+    "assigned_employee": {
+      "name": "عبدالله فهد العتيبى",
+      "photo": "/abdullah2.png"
+    },
+    "assignment_date": "2024/06/19",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/10",
+    "status": {
+      "key": "in_progress",
+      "text": "جديد",
+      "color": "#1D7A8C",
+      "bgColor": "#E0F7FA"
     }
   },
   {
@@ -442,192 +442,54 @@
     "submission_date": "2024/04/13",
     "order_type": "اقتراح",
     "applicant": {
-      "name": "هيئة الزكاة والضريبة والجمارك",
-      "photo": "/ZTCA.png"
+      "name": "مجلس الشراكة اللوجستى",
+      "photo": "/company-14.png"
     },
     "assigned_employee": {
-      "name": "عبدالله محمد العتيبي",
-      "photo": "/abdullah.png"
+      "name": "سارة خالد السعدى",
+      "photo": "/sarah.png"
     },
     "assignment_date": "2024/04/20",
     "last_update": "2024/06/27",
     "due_date": "2024/07/05",
     "status": {
       "key": "in_progress",
-      "text": "جاري العمل عليها من قبل الجهة الحكومية",
-      "color": "#384985",
-      "bgColor": "#E9E9F9"
+      "text": "بانتظار اسناد الطلب لجهة حكومية",
+      "color": "#2E5A41",
+      "bgColor": "#E8F5E9"
     }
   },
   {
     "id": 21,
-    "order_number": "679-763-60",
-    "submission_date": "2024/04/13",
-    "order_type": "اقتراح",
+    "order_number": "586-270-90",
+    "submission_date": "2024/05/10",
+    "order_type": "تحدي",
     "applicant": {
-      "name": "هيئة الزكاة والضريبة والجمارك",
-      "photo": "/ZTCA.png"
+      "name": "مراحل",
+      "photo": "/company-15.png"
     },
     "assigned_employee": {
-      "name": "عبدالله محمد العتيبي",
-      "photo": "/abdullah.png"
+      "name": "فيصل احمد الدوسرى",
+      "photo": "/anonymous.png"
     },
-    "assignment_date": "2024/04/20",
+    "assignment_date": "2024/06/19",
     "last_update": "2024/06/27",
-    "due_date": "2024/07/05",
+    "due_date": "2024/07/10",
     "status": {
       "key": "in_progress",
       "text": "جاري العمل عليها من قبل الجهة الحكومية",
-      "color": "#384985",
-      "bgColor": "#E9E9F9"
+      "color": "#4A148C",
+      "bgColor": "#EDE7F6"
     }
   },
   {
     "id": 22,
-    "order_number": "317-807-81",
-    "submission_date": "2024/01/31",
-    "order_type": "تحدي",
-    "applicant": {
-      "name": "الهيئة العامة للطيران المدني",
-      "photo": "/GACA.png"
-    },
-    "assigned_employee": {
-      "name": "سارة خالد السعدي",
-      "photo": "/sarah.png"
-    },
-    "assignment_date": "2024/02/06",
-    "last_update": "2024/04/14",
-    "due_date": "2024/05/01",
-    "status": {
-      "key": "in_progress",
-      "text": "بانتظار اسناد الطلب لجهة حكومية",
-      "color": "#1A4D2E",
-      "bgColor": "#E5F3EB"
-    }
-  },
-  {
-    "id": 23,
-    "order_number": "679-763-60",
-    "submission_date": "2024/04/13",
-    "order_type": "اقتراح",
-    "applicant": {
-      "name": "هيئة الزكاة والضريبة والجمارك",
-      "photo": "/ZTCA.png"
-    },
-    "assigned_employee": {
-      "name": "عبدالله محمد العتيبي",
-      "photo": "/abdullah.png"
-    },
-    "assignment_date": "2024/04/20",
-    "last_update": "2024/06/27",
-    "due_date": "2024/07/05",
-    "status": {
-      "key": "in_progress",
-      "text": "جاري العمل عليها من قبل الجهة الحكومية",
-      "color": "#384985",
-      "bgColor": "#E9E9F9"
-    }
-  },
-  {
-    "id": 24,
-    "order_number": "586-270-90",
-    "submission_date": "2024/05/10",
-    "order_type": "تحدي",
-    "applicant": {
-      "name": "الهيئة العامة للطيران المدني",
-      "photo": "/GACA.png"
-    },
-    "assigned_employee": {
-      "name": "سارة خالد السعدي",
-      "photo": "/sarah.png"
-    },
-    "assignment_date": "2024/06/19",
-    "last_update": "2024/06/27",
-    "due_date": "2024/07/10",
-    "status": {
-      "key": "in_progress",
-      "text": "بانتظار اسناد الطلب لجهة حكومية",
-      "color": "#1A4D2E",
-      "bgColor": "#E5F3EB"
-    }
-  },
-  {
-    "id": 25,
-    "order_number": "317-807-81",
-    "submission_date": "2024/01/31",
-    "order_type": "تحدي",
-    "applicant": {
-      "name": "الهيئة العامة للطيران المدني",
-      "photo": "/GACA.png"
-    },
-    "assigned_employee": {
-      "name": "سارة خالد السعدي",
-      "photo": "/sarah.png"
-    },
-    "assignment_date": "2024/02/06",
-    "last_update": "2024/04/14",
-    "due_date": "2024/05/01",
-    "status": {
-      "key": "in_progress",
-      "text": "بانتظار اسناد الطلب لجهة حكومية",
-      "color": "#1A4D2E",
-      "bgColor": "#E5F3EB"
-    }
-  },
-  {
-    "id": 26,
-    "order_number": "962-258-79",
-    "submission_date": "2024/02/26",
-    "order_type": "تحدي",
-    "applicant": {
-      "name": "الهيئة العامة للنقل",
-      "photo": "/TGA.png"
-    },
-    "assigned_employee": {
-      "name": "احمد خالد القحطاني",
-      "photo": "/ahmed.png"
-    },
-    "assignment_date": "2024/02/28",
-    "last_update": "2024/06/24",
-    "due_date": "2024/06/20",
-    "status": {
-      "key": "delayed",
-      "text": "متأخر",
-      "color": "#92400E",
-      "bgColor": "#FEF3C7"
-    }
-  },
-  {
-    "id": 27,
-    "order_number": "586-270-90",
-    "submission_date": "2024/05/10",
-    "order_type": "تحدي",
-    "applicant": {
-      "name": "الهيئة العامة للطيران المدني",
-      "photo": "/GACA.png"
-    },
-    "assigned_employee": {
-      "name": "سارة خالد السعدي",
-      "photo": "/sarah.png"
-    },
-    "assignment_date": "2024/06/19",
-    "last_update": "2024/06/27",
-    "due_date": "2024/07/10",
-    "status": {
-      "key": "in_progress",
-      "text": "بانتظار اسناد الطلب لجهة حكومية",
-      "color": "#1A4D2E",
-      "bgColor": "#E5F3EB"
-    }
-  },
-  {
-    "id": 28,
     "order_number": "946-566-14",
     "submission_date": "2024/04/19",
     "order_type": "اقتراح",
     "applicant": {
-      "name": "وزارة النقل والخدمات اللوجستية",
-      "photo": "/MTLS.png"
+      "name": "زاجل",
+      "photo": "/company-12.png"
     },
     "assigned_employee": {
       "name": "ليلى احمد الزهراني",
@@ -639,31 +501,652 @@
     "status": {
       "key": "in_progress",
       "text": "جاري العمل عليه",
-      "color": "#1E40AF",
-      "bgColor": "#DBEAFE"
+      "color": "#1A56B3",
+      "bgColor": "#E8EAF6"
+    }
+  },
+  {
+    "id": 23,
+    "order_number": "679-763-60",
+    "submission_date": "2024/04/13",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "مجلس الشراكة اللوجستى",
+      "photo": "/company-14.png"
+    },
+    "assigned_employee": {
+      "name": "احمد احمد الراشد",
+      "photo": "/ahmed2.png"
+    },
+    "assignment_date": "2024/04/20",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/05",
+    "status": {
+      "key": "in_progress",
+      "text": "الاسناد مرفوض من الجهة الحكومية",
+      "color": "#B71C1C",
+      "bgColor": "#FFEBEE"
+    }
+  },
+  {
+    "id": 24,
+    "order_number": "679-763-60",
+    "submission_date": "2024/04/13",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "مجلس الشراكة اللوجستى",
+      "photo": "/company-14.png"
+    },
+    "assigned_employee": {
+      "name": "سارة خالد السعدى",
+      "photo": "/sarah.png"
+    },
+    "assignment_date": "2024/04/20",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/05",
+    "status": {
+      "key": "delayed",
+      "text": "متأخر",
+      "color": "#855E2B",
+      "bgColor": "#FFF4D1"
+    }
+  },
+  {
+    "id": 25,
+    "order_number": "586-270-90",
+    "submission_date": "2024/05/10",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "سلة",
+      "photo": "/company-13.png"
+    },
+    "assigned_employee": {
+      "name": "عبدالله فهد العتيبى",
+      "photo": "/abdullah2.png"
+    },
+    "assignment_date": "2024/06/19",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/10",
+    "status": {
+      "key": "delayed",
+      "text": "متأخر",
+      "color": "#855E2B",
+      "bgColor": "#FFF4D1"
+    }
+  },
+  {
+    "id": 26,
+    "order_number": "946-566-14",
+    "submission_date": "2024/04/19",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "زاجل",
+      "photo": "/company-12.png"
+    },
+    "assigned_employee": {
+      "name": "ليلى احمد الزهراني",
+      "photo": "/leila.png"
+    },
+    "assignment_date": "2024/05/12",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/01",
+    "status": {
+      "key": "delayed",
+      "text": "متأخر",
+      "color": "#855E2B",
+      "bgColor": "#FFF4D1"
+    }
+  },
+  {
+    "id": 27,
+    "order_number": "586-270-90",
+    "submission_date": "2024/05/10",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "مراحل",
+      "photo": "/company-15.png"
+    },
+    "assigned_employee": {
+      "name": "فيصل احمد الدوسرى",
+      "photo": "/anonymous.png"
+    },
+    "assignment_date": "2024/06/19",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/10",
+    "status": {
+      "key": "delayed",
+      "text": "متأخر",
+      "color": "#855E2B",
+      "bgColor": "#FFF4D1"
+    }
+  },
+  {
+    "id": 28,
+    "order_number": "679-763-60",
+    "submission_date": "2024/04/13",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "مجلس الشراكة اللوجستى",
+      "photo": "/company-14.png"
+    },
+    "assigned_employee": {
+      "name": "احمد احمد الراشد",
+      "photo": "/ahmed2.png"
+    },
+    "assignment_date": "2024/04/20",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/05",
+    "status": {
+      "key": "delayed",
+      "text": "متأخر",
+      "color": "#855E2B",
+      "bgColor": "#FFF4D1"
     }
   },
   {
     "id": 29,
-    "order_number": "317-807-81",
-    "submission_date": "2024/01/31",
-    "order_type": "تحدي",
+    "order_number": "684-737-62",
+    "submission_date": "2024/03/20",
+    "order_type": "اقتراح",
     "applicant": {
-      "name": "الهيئة العامة للطيران المدني",
-      "photo": "/GACA.png"
+      "name": "ارامكس",
+      "photo": "/company-8.png"
     },
     "assigned_employee": {
-      "name": "سارة خالد السعدي",
+      "name": "ليلى الزهرانى",
+      "photo": "/anonymous.png"
+    },
+    "assignment_date": "2024/04/01",
+    "last_update": "2024/06/22",
+    "due_date": "2024/06/28",
+    "status": {
+      "key": "delayed",
+      "text": "متأخر",
+      "color": "#855E2B",
+      "bgColor": "#FFF4D1"
+    }
+  },
+  {
+    "id": 30,
+    "order_number": "710-994-58",
+    "submission_date": "2024/03/25",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "المجدوعى",
+      "photo": "/company-10.png"
+    },
+    "assigned_employee": {
+      "name": "نورة محمد الشهرى",
+      "photo": "/noura2.png"
+    },
+    "assignment_date": "2024/03/28",
+    "last_update": "2024/06/27",
+    "due_date": "2024/06/30",
+    "status": {
+      "key": "delayed",
+      "text": "متأخر",
+      "color": "#855E2B",
+      "bgColor": "#FFF4D1"
+    }
+  },
+  {
+    "id": 31,
+    "order_number": "710-994-58",
+    "submission_date": "2024/03/25",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "نون",
+      "photo": "/company-11.png"
+    },
+    "assigned_employee": {
+      "name": "نورة سلطان احمد",
+      "photo": "/noura.png"
+    },
+    "assignment_date": "2024/03/28",
+    "last_update": "2024/06/27",
+    "due_date": "2024/06/30",
+    "status": {
+      "key": "delayed",
+      "text": "متأخر",
+      "color": "#855E2B",
+      "bgColor": "#FFF4D1"
+    }
+  },
+  {
+    "id": 32,
+    "order_number": "691-826-50",
+    "submission_date": "2024/02/17",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "امازون",
+      "photo": "/company-1.png"
+    },
+    "assigned_employee": {
+      "name": "احمد خالد القحطاني",
+      "photo": "/ahmed.png"
+    },
+    "assignment_date": "2024/02/24",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/03",
+    "status": {
+      "key": "delayed",
+      "text": "متأخر",
+      "color": "#855E2B",
+      "bgColor": "#FFF4D1"
+    }
+  },
+  {
+    "id": 33,
+    "order_number": "586-270-90",
+    "submission_date": "2024/05/10",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "سلة",
+      "photo": "/company-13.png"
+    },
+    "assigned_employee": {
+      "name": "عبدالله فهد العتيبى",
+      "photo": "/abdullah2.png"
+    },
+    "assignment_date": "2024/06/19",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/10",
+    "status": {
+      "key": "updating",
+      "text": "جاري العمل عليها من قبل الجهة الحكومية",
+      "color": "#4A148C",
+      "bgColor": "#EDE7F6"
+    }
+  },
+  {
+    "id": 34,
+    "order_number": "679-763-60",
+    "submission_date": "2024/04/13",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "مجلس الشراكة اللوجستى",
+      "photo": "/company-14.png"
+    },
+    "assigned_employee": {
+      "name": "سارة خالد السعدى",
       "photo": "/sarah.png"
     },
-    "assignment_date": "2024/02/06",
-    "last_update": "2024/04/14",
-    "due_date": "2024/05/01",
+    "assignment_date": "2024/04/20",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/05",
     "status": {
-      "key": "in_progress",
-      "text": "بانتظار اسناد الطلب لجهة حكومية",
-      "color": "#1A4D2E",
-      "bgColor": "#E5F3EB"
+      "key": "updating",
+      "text": "بانتظار مراجعة التحديث",
+      "color": "#33691E",
+      "bgColor": "#F1F8E9"
+    }
+  },
+  {
+    "id": 35,
+    "order_number": "946-566-14",
+    "submission_date": "2024/04/19",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "زاجل",
+      "photo": "/company-12.png"
+    },
+    "assigned_employee": {
+      "name": "ليلى احمد الزهراني",
+      "photo": "/leila.png"
+    },
+    "assignment_date": "2024/05/12",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/01",
+    "status": {
+      "key": "updating",
+      "text": "جاري العمل عليه",
+      "color": "#1A56B3",
+      "bgColor": "#E8EAF6"
+    }
+  },
+  {
+    "id": 36,
+    "order_number": "586-270-90",
+    "submission_date": "2024/05/10",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "مراحل",
+      "photo": "/company-15.png"
+    },
+    "assigned_employee": {
+      "name": "فيصل احمد الدوسرى",
+      "photo": "/anonymous.png"
+    },
+    "assignment_date": "2024/06/19",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/10",
+    "status": {
+      "key": "updating",
+      "text": "جاري العمل عليها من قبل الجهة الحكومية",
+      "color": "#4A148C",
+      "bgColor": "#EDE7F6"
+    }
+  },
+  {
+    "id": 37,
+    "order_number": "679-763-60",
+    "submission_date": "2024/04/13",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "مجلس الشراكة اللوجستى",
+      "photo": "/company-14.png"
+    },
+    "assigned_employee": {
+      "name": "احمد احمد الراشد",
+      "photo": "/ahmed2.png"
+    },
+    "assignment_date": "2024/04/20",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/05",
+    "status": {
+      "key": "updating",
+      "text": "بانتظار تحديث البيانات",
+      "color": "#6A1B9A",
+      "bgColor": "#F3E5F5"
+    }
+  },
+  {
+    "id": 38,
+    "order_number": "710-994-58",
+    "submission_date": "2024/03/25",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "المجدوعى",
+      "photo": "/company-10.png"
+    },
+    "assigned_employee": {
+      "name": "نورة محمد الشهرى",
+      "photo": "/noura2.png"
+    },
+    "assignment_date": "2024/03/28",
+    "last_update": "2024/06/27",
+    "due_date": "2024/06/30",
+    "status": {
+      "key": "updating",
+      "text": "بانتظار مراجعة التحديث",
+      "color": "#33691E",
+      "bgColor": "#F1F8E9"
+    }
+  },
+  {
+    "id": 39,
+    "order_number": "691-826-50",
+    "submission_date": "2024/02/17",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "امازون",
+      "photo": "/company-1.png"
+    },
+    "assigned_employee": {
+      "name": "احمد خالد القحطاني",
+      "photo": "/ahmed.png"
+    },
+    "assignment_date": "2024/02/24",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/03",
+    "status": {
+      "key": "updating",
+      "text": "جاري العمل عليه",
+      "color": "#1A56B3",
+      "bgColor": "#E8EAF6"
+    }
+  },
+  {
+    "id": 40,
+    "order_number": "684-737-62",
+    "submission_date": "2024/03/20",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "ارامكس",
+      "photo": "/company-8.png"
+    },
+    "assigned_employee": {
+      "name": "ليلى الزهرانى",
+      "photo": "/anonymous.png"
+    },
+    "assignment_date": "2024/04/01",
+    "last_update": "2024/06/22",
+    "due_date": "2024/06/28",
+    "status": {
+      "key": "updating",
+      "text": "بانتظار تحديث البيانات",
+      "color": "#6A1B9A",
+      "bgColor": "#F3E5F5"
+    }
+  },
+  {
+    "id": 41,
+    "order_number": "710-994-58",
+    "submission_date": "2024/03/25",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "نون",
+      "photo": "/company-11.png"
+    },
+    "assigned_employee": {
+      "name": "نورة سلطان احمد",
+      "photo": "/noura.png"
+    },
+    "assignment_date": "2024/03/28",
+    "last_update": "2024/06/27",
+    "due_date": "2024/06/30",
+    "status": {
+      "key": "updating",
+      "text": "جاري العمل عليها من قبل الجهة الحكومية",
+      "color": "#4A148C",
+      "bgColor": "#EDE7F6"
+    }
+  },
+  {
+    "id": 42,
+    "order_number": "586-270-90",
+    "submission_date": "2024/05/10",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "سلة",
+      "photo": "/company-13.png"
+    },
+    "assigned_employee": {
+      "name": "عبدالله فهد العتيبى",
+      "photo": "/abdullah2.png"
+    },
+    "assignment_date": "2024/06/19",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/10",
+    "status": {
+      "key": "completed",
+      "text": "تم اكتمال الحل",
+      "color": "#2E7D32",
+      "bgColor": "#E8F5E9"
+    }
+  },
+  {
+    "id": 43,
+    "order_number": "679-763-60",
+    "submission_date": "2024/04/13",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "مجلس الشراكة اللوجستى",
+      "photo": "/company-14.png"
+    },
+    "assigned_employee": {
+      "name": "سارة خالد السعدى",
+      "photo": "/sarah.png"
+    },
+    "assignment_date": "2024/04/20",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/05",
+    "status": {
+      "key": "completed",
+      "text": "تم تسليم الحل",
+      "color": "#5E35B1",
+      "bgColor": "#EDE7F6"
+    }
+  },
+  {
+    "id": 44,
+    "order_number": "586-270-90",
+    "submission_date": "2024/05/10",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "مراحل",
+      "photo": "/company-15.png"
+    },
+    "assigned_employee": {
+      "name": "فيصل احمد الدوسرى",
+      "photo": "/anonymous.png"
+    },
+    "assignment_date": "2024/06/19",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/10",
+    "status": {
+      "key": "completed",
+      "text": "مرفوض",
+      "color": "#D81B60",
+      "bgColor": "#FCE4EC"
+    }
+  },
+  {
+    "id": 45,
+    "order_number": "946-566-14",
+    "submission_date": "2024/04/19",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "زاجل",
+      "photo": "/company-12.png"
+    },
+    "assigned_employee": {
+      "name": "ليلى احمد الزهراني",
+      "photo": "/leila.png"
+    },
+    "assignment_date": "2024/05/12",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/01",
+    "status": {
+      "key": "completed",
+      "text": "ملغى",
+      "color": "#BF360C",
+      "bgColor": "#FBE9E7"
+    }
+  },
+  {
+    "id": 46,
+    "order_number": "679-763-60",
+    "submission_date": "2024/04/13",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "احمد احمد الراشد",
+      "photo": "/ahmed2.png"
+    },
+    "assigned_employee": {
+      "name": "احمد احمد الراشد",
+      "photo": "/ahmed2.png"
+    },
+    "assignment_date": "2024/04/20",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/05",
+    "status": {
+      "key": "completed",
+      "text": "مغلق",
+      "color": "#455A64",
+      "bgColor": "#ECEFF1"
+    }
+  },
+  {
+    "id": 47,
+    "order_number": "710-994-58",
+    "submission_date": "2024/03/25",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "المجدوعى",
+      "photo": "/company-10.png"
+    },
+    "assigned_employee": {
+      "name": "نورة محمد الشهرى",
+      "photo": "/noura2.png"
+    },
+    "assignment_date": "2024/03/28",
+    "last_update": "2024/06/27",
+    "due_date": "2024/06/30",
+    "status": {
+      "key": "completed",
+      "text": "مرفوض",
+      "color": "#D81B60",
+      "bgColor": "#FCE4EC"
+    }
+  },
+  {
+    "id": 48,
+    "order_number": "684-737-62",
+    "submission_date": "2024/03/20",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "ارامكس",
+      "photo": "/company-8.png"
+    },
+    "assigned_employee": {
+      "name": "ليلى الزهرانى",
+      "photo": "/anonymous.png"
+    },
+    "assignment_date": "2024/04/01",
+    "last_update": "2024/06/22",
+    "due_date": "2024/06/28",
+    "status": {
+      "key": "completed",
+      "text": "تم اكتمال الحل",
+      "color": "#2E7D32",
+      "bgColor": "#E8F5E9"
+    }
+  },
+  {
+    "id": 49,
+    "order_number": "710-994-58",
+    "submission_date": "2024/03/25",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "نون",
+      "photo": "/company-11.png"
+    },
+    "assigned_employee": {
+      "name": "نورة سلطان احمد",
+      "photo": "/noura.png"
+    },
+    "assignment_date": "2024/03/28",
+    "last_update": "2024/06/27",
+    "due_date": "2024/06/30",
+    "status": {
+      "key": "completed",
+      "text": "تم اكتمال الحل",
+      "color": "#2E7D32",
+      "bgColor": "#E8F5E9"
+    }
+  },
+  {
+    "id": 50,
+    "order_number": "691-826-50",
+    "submission_date": "2024/02/17",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "امازون",
+      "photo": "/company-1.png"
+    },
+    "assigned_employee": {
+      "name": "احمد خالد القحطاني",
+      "photo": "/ahmed.png"
+    },
+    "assignment_date": "2024/02/24",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/03",
+    "status": {
+      "key": "completed",
+      "text": "مغلق",
+      "color": "#455A64",
+      "bgColor": "#ECEFF1"
     }
   }
 ]

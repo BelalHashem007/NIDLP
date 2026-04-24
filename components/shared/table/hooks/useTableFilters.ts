@@ -6,7 +6,7 @@ import {
   ColumnDef,
   OrderRow,
   TabsType,
-} from "@/features/NDLIP/data/table.types";
+} from "@/components/shared/table/table.types";
 
 type UseTableFiltersParams = {
   rows: OrderRow[];

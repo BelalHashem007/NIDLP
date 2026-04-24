@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { OrderRow } from "../../data/table.types";
+import { OrderRow } from "../../../../components/shared/table/table.types";
 import { ordersService } from "./orders.service";
 
 const getErrorMessage = (error: unknown) => {

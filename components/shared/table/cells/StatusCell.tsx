@@ -1,6 +1,6 @@
 "use client";
 
-import { StatusType } from "@/features/NDLIP/data/table.types";
+import { StatusType } from "@/components/shared/table/table.types";
 
 type StatusCellProps = {
   value?: StatusType;

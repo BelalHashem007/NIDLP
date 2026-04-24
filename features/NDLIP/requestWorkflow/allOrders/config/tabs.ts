@@ -1,6 +1,6 @@
 // tabs.ts
 
-import { TabsType, OrderRow } from "@/features/NDLIP/data/table.types";
+import { TabsType, OrderRow } from "@/components/shared/table/table.types";
 
 export const tabsData: TabsType<OrderRow>[] = [
   {

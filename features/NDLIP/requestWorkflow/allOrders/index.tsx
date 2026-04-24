@@ -7,7 +7,7 @@ import { Table } from "@/components/shared/table/Table";
 import ReassignOverlay from "./components/ReassignOverlay";
 import { thData } from "./config/tableColumns";
 import { tabsData } from "./config/tabs";
-import { Action, OrderRow, PersonType } from "../../data/table.types";
+import { Action, OrderRow, PersonType } from "../../../../components/shared/table/table.types";
 import { useOrders } from "./useOrders";
 
 function AllOrders() {

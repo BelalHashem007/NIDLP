@@ -13,7 +13,7 @@ import {
   OrderRow,
   PersonType,
   StatusType,
-} from "@/features/NDLIP/data/table.types";
+} from "@/components/shared/table/table.types";
 
 import { ActionsCell } from "./cells/ActionsCell";
 import { DefaultCell } from "./cells/DefaultCell";

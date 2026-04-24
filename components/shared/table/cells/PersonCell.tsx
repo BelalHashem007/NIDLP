@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import { PersonType } from "@/features/NDLIP/data/table.types";
+import { PersonType } from "@/components/shared/table/table.types";
 
 type PersonCellProps = {
   value?: PersonType;

@@ -8,7 +8,7 @@ import {
 import {
   ColumnDef,
   FilterConfig,
-} from "@/features/NDLIP/data/table.types";
+} from "@/components/shared/table/table.types";
 
 import { DateFilter } from "./filters/DateFilter";
 import { InputFilter } from "./filters/InputFilter";

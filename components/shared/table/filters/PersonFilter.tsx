@@ -9,7 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { PersonOption } from "@/features/NDLIP/data/table.types";
+import { PersonOption } from "@/components/shared/table/table.types";
 
 type PersonFilterProps = {
   options: PersonOption[];

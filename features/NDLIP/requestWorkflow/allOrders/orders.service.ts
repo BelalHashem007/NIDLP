@@ -1,5 +1,5 @@
 import axios from "axios";
-import { OrderRow } from "../../data/table.types";
+import { OrderRow } from "../../../../components/shared/table/table.types";
 
 const STORAGE_KEY = "allOrders";
 

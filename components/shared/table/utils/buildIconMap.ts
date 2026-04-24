@@ -3,7 +3,7 @@
 import * as LucideIcons from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
-import { OrderRow } from "@/features/NDLIP/data/table.types";
+import { OrderRow } from "@/components/shared/table/table.types";
 
 export const buildIconMap = (rows: OrderRow[]): Record<string, LucideIcon> => {
   const names = new Set(

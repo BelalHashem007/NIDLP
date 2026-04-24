@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 
-import { OrderRow } from "@/features/NDLIP/data/table.types";
+import { OrderRow } from "@/components/shared/table/table.types";
 
 type UsePaginationParams = {
   rows: OrderRow[];

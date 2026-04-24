@@ -4,7 +4,7 @@ import * as LucideIcons from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { OrderRow, TabsType } from "@/features/NDLIP/data/table.types";
+import { OrderRow, TabsType } from "@/components/shared/table/table.types";
 
 type TableTabsProps = {
   tabsData: TabsType<OrderRow>[];

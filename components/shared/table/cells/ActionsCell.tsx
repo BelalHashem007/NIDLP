@@ -10,7 +10,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Action, OrderRow } from "@/features/NDLIP/data/table.types";
+import { Action, OrderRow } from "@/components/shared/table/table.types";
 
 type ActionsCellProps = {
   row: OrderRow;
