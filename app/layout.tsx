@@ -36,6 +36,7 @@ export default function RootLayout({
         "font-sans",
         inter.variable,
       )}
+      data-scroll-behavior="smooth"
     >
       <body className="min-h-full">{children}</body>
     </html>
