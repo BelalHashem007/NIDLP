@@ -4,12 +4,11 @@ import {
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
-  BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { ChevronLeft } from "lucide-react";
 import { usePathname } from "next/navigation";
-import { navConfig } from "./nidlp/layout/nidlp-nav-config";
+import { navConfig } from "../nidlp/layout/nidlp-nav-config";
 
 export function BreadCrumbComponent() {
   const pathName = usePathname();

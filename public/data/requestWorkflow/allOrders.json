@@ -1,0 +1,669 @@
+[
+  {
+    "id": 1,
+    "order_number": "586-270-90",
+    "submission_date": "2024/05/10",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "الهيئة العامة للطيران المدني",
+      "photo": "/GACA.png"
+    },
+    "assigned_employee": {
+      "name": "سارة خالد السعدي",
+      "photo": "/sarah.png"
+    },
+    "assignment_date": "2024/06/19",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/10",
+    "status": {
+      "key": "in_progress",
+      "text": "بانتظار اسناد الطلب لجهة حكومية",
+      "color": "#1A4D2E",
+      "bgColor": "#E5F3EB"
+    }
+  },
+  {
+    "id": 2,
+    "order_number": "679-763-60",
+    "submission_date": "2024/04/13",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "هيئة الزكاة والضريبة والجمارك",
+      "photo": "/ZTCA.png"
+    },
+    "assigned_employee": {
+      "name": "عبدالله محمد العتيبي",
+      "photo": "/abdullah.png"
+    },
+    "assignment_date": "2024/04/20",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/05",
+    "status": {
+      "key": "in_progress",
+      "text": "جاري العمل عليها من قبل الجهة الحكومية",
+      "color": "#384985",
+      "bgColor": "#E9E9F9"
+    }
+  },
+  {
+    "id": 3,
+    "order_number": "946-566-14",
+    "submission_date": "2024/04/19",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "وزارة النقل والخدمات اللوجستية",
+      "photo": "/MTLS.png"
+    },
+    "assigned_employee": {
+      "name": "ليلى احمد الزهراني",
+      "photo": "/leila.png"
+    },
+    "assignment_date": "2024/05/12",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/01",
+    "status": {
+      "key": "in_progress",
+      "text": "جاري العمل عليه",
+      "color": "#1E40AF",
+      "bgColor": "#DBEAFE"
+    }
+  },
+  {
+    "id": 4,
+    "order_number": "586-270-90",
+    "submission_date": "2024/05/10",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "الهيئة العامة للطيران المدني",
+      "photo": "/GACA.png"
+    },
+    "assigned_employee": {
+      "name": "سارة خالد السعدي",
+      "photo": "/sarah.png"
+    },
+    "assignment_date": "2024/06/19",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/10",
+    "status": {
+      "key": "in_progress",
+      "text": "بانتظار اسناد الطلب لجهة حكومية",
+      "color": "#1A4D2E",
+      "bgColor": "#E5F3EB"
+    }
+  },
+  {
+    "id": 5,
+    "order_number": "679-763-60",
+    "submission_date": "2024/04/13",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "هيئة الزكاة والضريبة والجمارك",
+      "photo": "/ZTCA.png"
+    },
+    "assigned_employee": {
+      "name": "عبدالله محمد العتيبي",
+      "photo": "/abdullah.png"
+    },
+    "assignment_date": "2024/04/20",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/05",
+    "status": {
+      "key": "delayed",
+      "text": "متأخر",
+      "color": "#384985",
+      "bgColor": "#E9E9F9"
+    }
+  },
+  {
+    "id": 6,
+    "order_number": "710-994-58",
+    "submission_date": "2024/03/25",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "الهيئة العامة للنقل",
+      "photo": "/TGA.png"
+    },
+    "assigned_employee": {
+      "name": "احمد احمد الراشد",
+      "photo": "/ahmed.png"
+    },
+    "assignment_date": "2024/03/28",
+    "last_update": "2024/06/27",
+    "due_date": "2024/06/30",
+    "status": {
+      "key": "completed",
+      "text": "الاسناد مرفوض من الجهة الحكومية",
+      "color": "#991B1B",
+      "bgColor": "#FEE2E2"
+    }
+  },
+  {
+    "id": 7,
+    "order_number": "691-826-50",
+    "submission_date": "2024/02/17",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "هيئة الزكاة والضريبة والجمارك",
+      "photo": "/ZTCA.png"
+    },
+    "assigned_employee": {
+      "name": "ليلى الزهراني",
+      "photo": "/leila.png"
+    },
+    "assignment_date": "2024/02/24",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/03",
+    "status": {
+      "key": "in_progress",
+      "text": "جاري العمل عليها من قبل الجهة الحكومية",
+      "color": "#384985",
+      "bgColor": "#E9E9F9"
+    }
+  },
+  {
+    "id": 8,
+    "order_number": "684-737-62",
+    "submission_date": "2024/03/20",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "وزارة النقل والخدمات اللوجستية",
+      "photo": "/MTLS.png"
+    },
+    "assigned_employee": {
+      "name": "نورة محمد الشهري",
+      "photo": "/nora.png"
+    },
+    "assignment_date": "2024/04/01",
+    "last_update": "2024/06/22",
+    "due_date": "2024/06/28",
+    "status": {
+      "key": "updating",
+      "text": "بانتظار مراجعة التحديث",
+      "color": "#3B5E0B",
+      "bgColor": "#EFFFD9"
+    }
+  },
+  {
+    "id": 9,
+    "order_number": "710-994-58",
+    "submission_date": "2024/03/25",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "الهيئة العامة للنقل",
+      "photo": "/TGA.png"
+    },
+    "assigned_employee": {
+      "name": "احمد احمد الراشد",
+      "photo": "/ahmed.png"
+    },
+    "assignment_date": "2024/03/28",
+    "last_update": "2024/06/27",
+    "due_date": "2024/06/30",
+    "status": {
+      "key": "completed",
+      "text": "الاسناد مرفوض من الجهة الحكومية",
+      "color": "#991B1B",
+      "bgColor": "#FEE2E2"
+    }
+  },
+  {
+    "id": 10,
+    "order_number": "962-258-79",
+    "submission_date": "2024/02/26",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "الهيئة العامة للنقل",
+      "photo": "/TGA.png"
+    },
+    "assigned_employee": {
+      "name": "احمد خالد القحطاني",
+      "photo": "/ahmed.png"
+    },
+    "assignment_date": "2024/02/28",
+    "last_update": "2024/06/24",
+    "due_date": "2024/06/20",
+    "status": {
+      "key": "delayed",
+      "text": "متأخر",
+      "color": "#92400E",
+      "bgColor": "#FEF3C7"
+    }
+  },
+  {
+    "id": 11,
+    "order_number": "691-826-50",
+    "submission_date": "2024/02/17",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "هيئة الزكاة والضريبة والجمارك",
+      "photo": "/ZTCA.png"
+    },
+    "assigned_employee": {
+      "name": "ليلى الزهراني",
+      "photo": "/leila.png"
+    },
+    "assignment_date": "2024/02/24",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/03",
+    "status": {
+      "key": "in_progress",
+      "text": "جاري العمل عليها من قبل الجهة الحكومية",
+      "color": "#384985",
+      "bgColor": "#E9E9F9"
+    }
+  },
+  {
+    "id": 12,
+    "order_number": "710-994-58",
+    "submission_date": "2024/03/25",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "الهيئة العامة للنقل",
+      "photo": "/TGA.png"
+    },
+    "assigned_employee": {
+      "name": "احمد احمد الراشد",
+      "photo": "/ahmed.png"
+    },
+    "assignment_date": "2024/03/28",
+    "last_update": "2024/06/27",
+    "due_date": "2024/06/30",
+    "status": {
+      "key": "completed",
+      "text": "الاسناد مرفوض من الجهة الحكومية",
+      "color": "#991B1B",
+      "bgColor": "#FEE2E2"
+    }
+  },
+  {
+    "id": 13,
+    "order_number": "317-807-81",
+    "submission_date": "2024/01/31",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "الهيئة العامة للطيران المدني",
+      "photo": "/GACA.png"
+    },
+    "assigned_employee": {
+      "name": "سارة خالد السعدي",
+      "photo": "/sarah.png"
+    },
+    "assignment_date": "2024/02/06",
+    "last_update": "2024/04/14",
+    "due_date": "2024/05/01",
+    "status": {
+      "key": "in_progress",
+      "text": "بانتظار اسناد الطلب لجهة حكومية",
+      "color": "#1A4D2E",
+      "bgColor": "#E5F3EB"
+    }
+  },
+  {
+    "id": 14,
+    "order_number": "112-391-15",
+    "submission_date": "2024/01/20",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "هيئة الزكاة والضريبة والجمارك",
+      "photo": "/ZTCA.png"
+    },
+    "assigned_employee": {
+      "name": "فيصل احمد الدوسري",
+      "photo": "/ahmed.png"
+    },
+    "assignment_date": "2024/01/25",
+    "last_update": "2024/04/01",
+    "due_date": "2024/04/20",
+    "status": {
+      "key": "updating",
+      "text": "بانتظار تحديث البيانات",
+      "color": "#6D007E",
+      "bgColor": "#FDEEFF"
+    }
+  },
+  {
+    "id": 15,
+    "order_number": "946-566-14",
+    "submission_date": "2024/04/19",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "وزارة النقل والخدمات اللوجستية",
+      "photo": "/MTLS.png"
+    },
+    "assigned_employee": {
+      "name": "ليلى احمد الزهراني",
+      "photo": "/leila.png"
+    },
+    "assignment_date": "2024/05/12",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/01",
+    "status": {
+      "key": "in_progress",
+      "text": "جاري العمل عليه",
+      "color": "#1E40AF",
+      "bgColor": "#DBEAFE"
+    }
+  },
+  {
+    "id": 16,
+    "order_number": "317-807-81",
+    "submission_date": "2024/01/31",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "الهيئة العامة للطيران المدني",
+      "photo": "/GACA.png"
+    },
+    "assigned_employee": {
+      "name": "سارة خالد السعدي",
+      "photo": "/sarah.png"
+    },
+    "assignment_date": "2024/02/06",
+    "last_update": "2024/04/14",
+    "due_date": "2024/05/01",
+    "status": {
+      "key": "delayed",
+      "text": "متأخر ",
+      "color": "#1A4D2E",
+      "bgColor": "#E5F3EB"
+    }
+  },
+  {
+    "id": 17,
+    "order_number": "112-391-15",
+    "submission_date": "2024/01/20",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "هيئة الزكاة والضريبة والجمارك",
+      "photo": "/ZTCA.png"
+    },
+    "assigned_employee": {
+      "name": "فيصل احمد الدوسري",
+      "photo": "/ahmed.png"
+    },
+    "assignment_date": "2024/01/25",
+    "last_update": "2024/04/01",
+    "due_date": "2024/04/20",
+    "status": {
+      "key": "updating",
+      "text": "بانتظار تحديث البيانات",
+      "color": "#6D007E",
+      "bgColor": "#FDEEFF"
+    }
+  },
+  {
+    "id": 18,
+    "order_number": "317-807-81",
+    "submission_date": "2024/01/31",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "الهيئة العامة للطيران المدني",
+      "photo": "/GACA.png"
+    },
+    "assigned_employee": {
+      "name": "سارة خالد السعدي",
+      "photo": "/sarah.png"
+    },
+    "assignment_date": "2024/02/06",
+    "last_update": "2024/04/14",
+    "due_date": "2024/05/01",
+    "status": {
+      "key": "in_progress",
+      "text": "بانتظار اسناد الطلب لجهة حكومية",
+      "color": "#1A4D2E",
+      "bgColor": "#E5F3EB"
+    }
+  },
+  {
+    "id": 19,
+    "order_number": "679-763-60",
+    "submission_date": "2024/04/13",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "هيئة الزكاة والضريبة والجمارك",
+      "photo": "/ZTCA.png"
+    },
+    "assigned_employee": {
+      "name": "عبدالله محمد العتيبي",
+      "photo": "/abdullah.png"
+    },
+    "assignment_date": "2024/04/20",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/05",
+    "status": {
+      "key": "in_progress",
+      "text": "جاري العمل عليها من قبل الجهة الحكومية",
+      "color": "#384985",
+      "bgColor": "#E9E9F9"
+    }
+  },
+  {
+    "id": 20,
+    "order_number": "679-763-60",
+    "submission_date": "2024/04/13",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "هيئة الزكاة والضريبة والجمارك",
+      "photo": "/ZTCA.png"
+    },
+    "assigned_employee": {
+      "name": "عبدالله محمد العتيبي",
+      "photo": "/abdullah.png"
+    },
+    "assignment_date": "2024/04/20",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/05",
+    "status": {
+      "key": "in_progress",
+      "text": "جاري العمل عليها من قبل الجهة الحكومية",
+      "color": "#384985",
+      "bgColor": "#E9E9F9"
+    }
+  },
+  {
+    "id": 21,
+    "order_number": "679-763-60",
+    "submission_date": "2024/04/13",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "هيئة الزكاة والضريبة والجمارك",
+      "photo": "/ZTCA.png"
+    },
+    "assigned_employee": {
+      "name": "عبدالله محمد العتيبي",
+      "photo": "/abdullah.png"
+    },
+    "assignment_date": "2024/04/20",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/05",
+    "status": {
+      "key": "in_progress",
+      "text": "جاري العمل عليها من قبل الجهة الحكومية",
+      "color": "#384985",
+      "bgColor": "#E9E9F9"
+    }
+  },
+  {
+    "id": 22,
+    "order_number": "317-807-81",
+    "submission_date": "2024/01/31",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "الهيئة العامة للطيران المدني",
+      "photo": "/GACA.png"
+    },
+    "assigned_employee": {
+      "name": "سارة خالد السعدي",
+      "photo": "/sarah.png"
+    },
+    "assignment_date": "2024/02/06",
+    "last_update": "2024/04/14",
+    "due_date": "2024/05/01",
+    "status": {
+      "key": "in_progress",
+      "text": "بانتظار اسناد الطلب لجهة حكومية",
+      "color": "#1A4D2E",
+      "bgColor": "#E5F3EB"
+    }
+  },
+  {
+    "id": 23,
+    "order_number": "679-763-60",
+    "submission_date": "2024/04/13",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "هيئة الزكاة والضريبة والجمارك",
+      "photo": "/ZTCA.png"
+    },
+    "assigned_employee": {
+      "name": "عبدالله محمد العتيبي",
+      "photo": "/abdullah.png"
+    },
+    "assignment_date": "2024/04/20",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/05",
+    "status": {
+      "key": "in_progress",
+      "text": "جاري العمل عليها من قبل الجهة الحكومية",
+      "color": "#384985",
+      "bgColor": "#E9E9F9"
+    }
+  },
+  {
+    "id": 24,
+    "order_number": "586-270-90",
+    "submission_date": "2024/05/10",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "الهيئة العامة للطيران المدني",
+      "photo": "/GACA.png"
+    },
+    "assigned_employee": {
+      "name": "سارة خالد السعدي",
+      "photo": "/sarah.png"
+    },
+    "assignment_date": "2024/06/19",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/10",
+    "status": {
+      "key": "in_progress",
+      "text": "بانتظار اسناد الطلب لجهة حكومية",
+      "color": "#1A4D2E",
+      "bgColor": "#E5F3EB"
+    }
+  },
+  {
+    "id": 25,
+    "order_number": "317-807-81",
+    "submission_date": "2024/01/31",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "الهيئة العامة للطيران المدني",
+      "photo": "/GACA.png"
+    },
+    "assigned_employee": {
+      "name": "سارة خالد السعدي",
+      "photo": "/sarah.png"
+    },
+    "assignment_date": "2024/02/06",
+    "last_update": "2024/04/14",
+    "due_date": "2024/05/01",
+    "status": {
+      "key": "in_progress",
+      "text": "بانتظار اسناد الطلب لجهة حكومية",
+      "color": "#1A4D2E",
+      "bgColor": "#E5F3EB"
+    }
+  },
+  {
+    "id": 26,
+    "order_number": "962-258-79",
+    "submission_date": "2024/02/26",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "الهيئة العامة للنقل",
+      "photo": "/TGA.png"
+    },
+    "assigned_employee": {
+      "name": "احمد خالد القحطاني",
+      "photo": "/ahmed.png"
+    },
+    "assignment_date": "2024/02/28",
+    "last_update": "2024/06/24",
+    "due_date": "2024/06/20",
+    "status": {
+      "key": "delayed",
+      "text": "متأخر",
+      "color": "#92400E",
+      "bgColor": "#FEF3C7"
+    }
+  },
+  {
+    "id": 27,
+    "order_number": "586-270-90",
+    "submission_date": "2024/05/10",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "الهيئة العامة للطيران المدني",
+      "photo": "/GACA.png"
+    },
+    "assigned_employee": {
+      "name": "سارة خالد السعدي",
+      "photo": "/sarah.png"
+    },
+    "assignment_date": "2024/06/19",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/10",
+    "status": {
+      "key": "in_progress",
+      "text": "بانتظار اسناد الطلب لجهة حكومية",
+      "color": "#1A4D2E",
+      "bgColor": "#E5F3EB"
+    }
+  },
+  {
+    "id": 28,
+    "order_number": "946-566-14",
+    "submission_date": "2024/04/19",
+    "order_type": "اقتراح",
+    "applicant": {
+      "name": "وزارة النقل والخدمات اللوجستية",
+      "photo": "/MTLS.png"
+    },
+    "assigned_employee": {
+      "name": "ليلى احمد الزهراني",
+      "photo": "/leila.png"
+    },
+    "assignment_date": "2024/05/12",
+    "last_update": "2024/06/27",
+    "due_date": "2024/07/01",
+    "status": {
+      "key": "in_progress",
+      "text": "جاري العمل عليه",
+      "color": "#1E40AF",
+      "bgColor": "#DBEAFE"
+    }
+  },
+  {
+    "id": 29,
+    "order_number": "317-807-81",
+    "submission_date": "2024/01/31",
+    "order_type": "تحدي",
+    "applicant": {
+      "name": "الهيئة العامة للطيران المدني",
+      "photo": "/GACA.png"
+    },
+    "assigned_employee": {
+      "name": "سارة خالد السعدي",
+      "photo": "/sarah.png"
+    },
+    "assignment_date": "2024/02/06",
+    "last_update": "2024/04/14",
+    "due_date": "2024/05/01",
+    "status": {
+      "key": "in_progress",
+      "text": "بانتظار اسناد الطلب لجهة حكومية",
+      "color": "#1A4D2E",
+      "bgColor": "#E5F3EB"
+    }
+  }
+]

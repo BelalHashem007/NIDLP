@@ -10,7 +10,7 @@ export function NidlpSidebar() {
   return (
     <aside className="hidden lg:block fixed top-20 h-[calc(100%-80px)] max-w-[260px] shrink-0 border-l border-[#E5E7EB] bg-white">
       <div className="flex h-full flex-col">
-        <nav className="flex-1 space-y-2 overflow-y-auto px-3 pt-6">
+        <nav className="flex-1 space-y-2 px-3 pt-6">
           <NidlpNavList variant="sidebar" />
         </nav>
 

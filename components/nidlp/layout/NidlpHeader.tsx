@@ -6,8 +6,9 @@ import { usePathname } from "next/navigation";
 import { Bell, Building2, ChevronLeft, Menu, X } from "lucide-react";
 import Logo from "@/public/logo.png";
 import Avatar from "@/public/avatar@2x.png";
-import { BreadCrumbComponent } from "@/components/BreadCrumpComponent";
+import { BreadCrumbComponent } from "@/components/shared/BreadCrumpComponent";
 import { NidlpNavList } from "@/components/nidlp/layout/NidlpNavList";
+import Link from "next/link";
 
 export function NidlpHeader() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -46,7 +47,9 @@ export function NidlpHeader() {
         <div className="hidden h-20 w-full items-center px-4 lg:flex">
           <div className="flex h-full w-full items-center">
             <div className="flex h-full min-w-0 w-59.5 items-center justify-center gap-2 border-l border-[#FFFFFF1F]">
-              <Image src={Logo} alt="Logo" priority />
+              <Link href={"/"}>
+              <Image src={Logo} alt="Logo" priority className="cursor-pointer" />
+              </Link>
             </div>
 
             <div className="flex min-w-0 flex-1 flex-col justify-center px-4">
