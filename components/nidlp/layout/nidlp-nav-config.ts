@@ -76,13 +76,13 @@ export const navConfig: NavEntry[] = [
   },
   {
     kind: "link",
-    href: "/nidlp/agencies",
+    href: "/nidlp/agency",
     label: "إدارة الجهات الحكومية",
     icon: Building2,
   },
   {
     kind: "link",
-    href: "/nidlp/companies",
+    href: "/nidlp/company",
     label: "إدارة الشركات",
     icon: Building,
   },
@@ -118,10 +118,34 @@ export const navConfig: NavEntry[] = [
   },
 ];
 
+/** Dynamic survey detail pages under `/nidlp/dashboard/survey-details/[id]`. */
+export function isSurveyDetailsPathname(pathname: string | null): boolean {
+  if (!pathname) return false;
+  return /^\/nidlp\/dashboard\/survey-details\/[^/]+$/.test(pathname);
+}
+
+const SURVEYS_DASHBOARD_HREF = "/nidlp/dashboard/surveys-dashboard";
+
+/** Whether `child` should show the active nav style for `pathname` (includes survey-details under surveys). */
+export function isNavChildActive(
+  child: NavChild,
+  pathname: string | null,
+): boolean {
+  if (!pathname) return false;
+  if (pathname === child.href) return true;
+  if (
+    child.href === SURVEYS_DASHBOARD_HREF &&
+    isSurveyDetailsPathname(pathname)
+  ) {
+    return true;
+  }
+  return false;
+}
+
 export function groupHasActiveChild(
   entry: NavGroupEntry,
   pathname: string | null,
 ) {
   if (!pathname) return false;
-  return entry.children.some((c) => pathname === c.href);
+  return entry.children.some((c) => isNavChildActive(c, pathname));
 }

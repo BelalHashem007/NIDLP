@@ -4,15 +4,17 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Bell, Building2, ChevronLeft, Menu, X } from "lucide-react";
-import Logo from "@/public/logo.png";
-import Avatar from "@/public/avatar@2x.png";
+import Logo from "@/public/assets/logo.png";
+import Avatar from "@/public/assets/avatar@2x.png";
 import { BreadCrumbComponent } from "@/components/shared/BreadCrumpComponent";
+import { getPageTitleForPathname } from "@/components/nidlp/layout/breadcrumb-config";
 import { NidlpNavList } from "@/components/nidlp/layout/NidlpNavList";
 import Link from "next/link";
 
 export function NidlpHeader() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const pathname = usePathname();
+  const pageTitle = getPageTitleForPathname(pathname);
   const drawerCloseRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
@@ -52,11 +54,13 @@ export function NidlpHeader() {
               </Link>
             </div>
 
-            <div className="flex min-w-0 flex-1 flex-col justify-center px-4">
+            <div className="flex min-w-0 flex-1 flex-col justify-center gap-1.5 px-4">
               <BreadCrumbComponent />
-              <div className="min-w-0 truncate text-sm font-semibold">
-                لوحة التحكم الداخلية
-              </div>
+              {pageTitle ? (
+                <div className="min-w-0 truncate text-sm font-semibold">
+                  {pageTitle}
+                </div>
+              ) : null}
             </div>
 
             <div className="flex items-center gap-3">
